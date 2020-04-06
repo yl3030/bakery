@@ -1,0 +1,125 @@
+$sColor: #a8dcdf;
+$bColor: #fe6162;
+$fColor: #565656;
+$hMargin-left: 100px;
+$hMargin-top: 25px;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 微軟正黑體;
+	box-sizing: border-box;
+}
+
+#bg {
+	background-image: url(./img/background.jpg);
+	height: 100vh;
+	// 背景填滿整個元素
+	background-size: cover;
+}
+
+nav {
+	height: 100px;
+	ul {
+		li {
+			display: inline-block;
+		}
+		#logo {
+			width: 100px;
+			border-right: 2px solid $sColor;
+			margin-top: $hMargin-top;
+			margin-left: $hMargin-left;
+			display: inline-block;
+			a {
+				color: $bColor;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: bold;
+				font-family: "Arial Black";
+			}
+		}
+		#content {
+			display: inline-block;
+			vertical-align: top;
+			li a {
+				display: inline-block;
+				line-height: 56px;
+				padding: 0 20px;
+				margin-top: $hMargin-top;
+				font-size: 16px;
+				color: $fColor;
+				font-weight: 900;
+				text-decoration: none;
+				&:hover {
+					color: $bColor;
+				}
+			}
+		}
+		#nav-btn {
+            display: inline-block;
+            position: fixed;
+            right: 70px;
+            top: 35px;
+			img {
+				height: 45px;
+				background-color: $bColor;
+				border-radius: 50%;
+                padding: 9px;
+                &:hover{
+                    background-color: $fColor;
+                }
+            }
+            #car{
+                margin: 0 15px;
+            }
+		}
+	}
+}
+
+section {
+	#title {
+		font-size: 70px;
+		font-weight: 900;
+		color: $fColor;
+		margin-left: $hMargin-left;
+		margin-top: 80px;
+		div {
+			height: 70px;
+		}
+	}
+	#s-title {
+		margin-left: $hMargin-left;
+		margin-top: 30px;
+		font-size: 16px;
+		color: #949494;
+		p {
+			display: inline-block;
+			margin: 0 15px 0 0;
+		}
+	}
+	#home-shop {
+		padding: 10px 20px;
+		margin: 30px 0 0 $hMargin-left;
+		border: 2px solid $bColor;
+		font-size: 16px;
+		color: $bColor;
+		border-radius: 30px;
+		cursor: pointer;
+		&:hover {
+			color: #fff;
+			background-color: $bColor;
+		}
+	}
+	#contact-btn {
+		margin-left: $hMargin-left;
+		margin-top: 150px;
+		img {
+			height: 40px;
+			border-radius: 50%;
+			// box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+		}
+		#fb {
+			margin: 0 10px;
+		}
+	}
+}

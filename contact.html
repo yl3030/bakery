@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yulita Bakery</title>
+
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- my CSS -->
+    <link rel="stylesheet" href="./contact.css">
+
+</head>
+
+<body>
+    <div id="bg">
+        <nav>
+            <ul>
+                <div id="logo">
+                    <a href="index.html">
+                        <li>Yulita</li>
+                        <br>
+                        <li>Bakery</li>
+                    </a>
+                </div>
+                <div id="content">
+                    <li><a href="story.html" id="story">品牌故事</a></li>
+                    <li><a href="new.html" id="new">最新消息</a></li>
+                    <li><a href="store.html" id="store">門市據點</a></li>
+                    <li><a href="contact.html" id="contact">聯絡我們</a></li>
+                </div>
+                <div id="nav-btn">
+                    <li id="login"><a href="#"><img src="img/login.png"></a></li>
+                    <li id="car"><a href="#"><img src="img/car.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="contact-content">
+        <h1>聯絡我們</h1>
+        <div class="form">
+            <label for="subject">主旨</label>
+            <input type="text" id="subject" name="subject" placeholder="請輸入主旨">
+        </div>
+
+        <div class="form">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+        </div>
+        <div class="form">
+            <label for="phone">電話</label>
+            <input type="text" id="phone" name="phone" placeholder="請輸入電話" required>
+        </div>
+        <div class="form">
+            <label for="mail">信箱</label>
+            <input type="email" id="mail" name="mail" placeholder="請輸入信箱" required>
+        </div>
+
+        <div id="form-text">
+            <label for="text">內容</label>
+            <textarea name="text" id="text" cols="40" rows="10"></textarea>
+        </div>
+
+        <div id="btn">
+            <input type="reset" id="reset" value="重新輸入">
+            <input type="submit" id="submit" value="確認送出">
+        </div>
+    </div>
+
+
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>

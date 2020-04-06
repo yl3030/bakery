@@ -51,7 +51,7 @@ nav {
 					color: $bColor;
 				}
 			}
-			#store {
+			#contact {
 				color: $bColor;
 			}
 		}
@@ -77,22 +77,56 @@ nav {
 	}
 }
 
-#store-content{
+#contact-content{
     width: 600px;
     margin: 0 auto;
     h1{
         color: $bColor;
         margin: 50px auto;
     }
-    h2{
-        font-size: 24px;
-        border-left: 7px solid $sColor;
-        padding-left: 7px;
+
+    .form{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin: 15px 0;
+        align-items: center;
+        #subject, #name, #phone, #mail{
+            padding: 8px;
+            background: none;
+            border: 1px solid #bbb6ac;
+            border-radius: 5px;
+            font-size: 14px;
+        }
     }
-    #store1, #store2, #store3{
-        color: rgb(39, 39, 39);
-        margin: 30px 0;
+
+    #form-text{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin: 15px 0;
+        #text{
+            vertical-align: top;
+            padding: 8px;
+            background: none;
+            border: 1px solid #bbb6ac;
+            border-radius: 5px;
+            font-size: 14px;
+        }
     }
+   
+    #btn{
+        text-align: center;
+        #reset, #submit{
+            padding: 10px 20px;
+            margin: 20px 20px;
+            background-color: $bColor;
+            border-radius: 30px;
+            color: #fff;
+            border: 0;
+        }
+    }
+    
+
+
 
 }
 

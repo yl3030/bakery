@@ -12,7 +12,7 @@ $hMargin-top: 25px;
 }
 
 body {
-	background-color: #fef7ea;
+	// background-color: #fef7ea;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav {
 					color: $bColor;
 				}
 			}
-			#contact {
+			#product {
 				color: $bColor;
 			}
 		}
@@ -60,7 +60,8 @@ nav {
 			display: inline-block;
 			position: fixed;
 			right: 70px;
-			top: 35px;
+            top: 35px;
+            z-index: 1;
 			img {
 				height: 45px;
 				background-color: $bColor;
@@ -77,61 +78,44 @@ nav {
 	}
 }
 
-#contact-content{
-    width: 600px;
+#banner{
+    max-width: 1200px;
     margin: 0 auto;
-    h1{
-        color: $bColor;
-        margin: 50px auto;
-    }
-
-    label{
-        color: rgb(39,39,39);
-    }
-
-    .form{
-        display: grid;
-        grid-template-columns: 10% 90%;
-        margin: 15px 0;
-        align-items: center;
-        #subject, #name, #phone, #mail{
-            padding: 8px;
-            background: none;
-            border: 1px solid #bbb6ac;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-    }
-
-    #form-text{
-        display: grid;
-        grid-template-columns: 10% 90%;
-        margin: 15px 0;
-        #text{
-            vertical-align: top;
-            padding: 8px;
-            background: none;
-            border: 1px solid #b6a88d;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-    }
-   
-    #btn{
-        text-align: center;
-        #reset, #submit{
-            padding: 10px 25px;
-            margin: 20px 20px;
-            background-color: $bColor;
-            border-radius: 30px;
-            color: #fff;
-            border: 0;
-            font-size: 14px;
-            &:hover{
-                background-color: $sColor;
-            }
-        }
+    img{
+        height: 400px;
     }
 }
 
+#product-content{
+    h1{
+        color: $bColor;
+    }
 
+    h2{
+        // color: rgb(39,39,39);
+        color: #fff;
+        // background-color: #fef7ea;
+        background-color: $sColor;
+    }
+
+    h5{
+        color: rgb(39,39,39);
+    }
+    #icon1, #icon2, #icon3, #icon4, #icon5{
+        width: 100px;
+        height: 100px;
+        background-color: #FAF1D6;
+        border-radius: 10px;
+        &:hover{
+            background-color: $sColor;
+        }
+    }
+    #birthday, #bread, #wedding, #baby, #snack{
+        img{
+            width: 200px !important;
+            box-sizing: cover;
+            overflow: hidden;
+            background: none;
+        }
+    }
+}

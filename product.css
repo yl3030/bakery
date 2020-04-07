@@ -7,12 +7,6 @@
           box-sizing: border-box;
 }
 
-#bg {
-  background-image: url(./img/background.jpg);
-  height: 100vh;
-  background-size: cover;
-}
-
 nav {
   height: 100px;
 }
@@ -57,11 +51,16 @@ nav ul #content li a:hover {
   color: #fe6162;
 }
 
+nav ul #content #product {
+  color: #fe6162;
+}
+
 nav ul #nav-btn {
   display: inline-block;
   position: fixed;
   right: 70px;
   top: 35px;
+  z-index: 1;
 }
 
 nav ul #nav-btn img {
@@ -79,64 +78,44 @@ nav ul #nav-btn #car {
   margin: 0 15px;
 }
 
-section #title {
-  font-size: 70px;
-  font-weight: 900;
-  color: #565656;
-  margin-left: 100px;
-  margin-top: 80px;
+#banner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-section #title div {
-  height: 70px;
+#banner img {
+  height: 400px;
 }
 
-section #s-title {
-  margin-left: 100px;
-  margin-top: 30px;
-  font-size: 16px;
-  color: #949494;
-}
-
-section #s-title p {
-  display: inline-block;
-  margin: 0 15px 0 0;
-}
-
-section #home-shop {
-  padding: 10px 20px;
-  margin: 30px 0 0 100px;
-  border: 2px solid #fe6162;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-section #home-shop a {
-  text-decoration: none;
+#product-content h1 {
   color: #fe6162;
 }
 
-section #home-shop:hover {
-  background-color: #fe6162;
-}
-
-section #home-shop:hover a {
+#product-content h2 {
   color: #fff;
+  background-color: #a8dcdf;
 }
 
-section #contact-btn {
-  position: fixed;
-  bottom: 25px;
-  left: 100px;
+#product-content h5 {
+  color: #272727;
 }
 
-section #contact-btn img {
-  height: 40px;
-  border-radius: 50%;
+#product-content #icon1, #product-content #icon2, #product-content #icon3, #product-content #icon4, #product-content #icon5 {
+  width: 100px;
+  height: 100px;
+  background-color: #FAF1D6;
+  border-radius: 10px;
 }
 
-section #contact-btn #fb {
-  margin: 0 10px;
+#product-content #icon1:hover, #product-content #icon2:hover, #product-content #icon3:hover, #product-content #icon4:hover, #product-content #icon5:hover {
+  background-color: #a8dcdf;
 }
-/*# sourceMappingURL=style.css.map */
+
+#product-content #birthday img, #product-content #bread img, #product-content #wedding img, #product-content #baby img, #product-content #snack img {
+  width: 200px !important;
+  -webkit-box-sizing: cover;
+          box-sizing: cover;
+  overflow: hidden;
+  background: none;
+}
+/*# sourceMappingURL=product.css.map */

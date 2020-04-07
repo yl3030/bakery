@@ -91,6 +91,10 @@ nav ul #nav-btn #car {
   margin: 50px auto;
 }
 
+#contact-content label {
+  color: #272727;
+}
+
 #contact-content .form {
   display: -ms-grid;
   display: grid;
@@ -122,7 +126,7 @@ nav ul #nav-btn #car {
   vertical-align: top;
   padding: 8px;
   background: none;
-  border: 1px solid #bbb6ac;
+  border: 1px solid #b6a88d;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -132,11 +136,16 @@ nav ul #nav-btn #car {
 }
 
 #contact-content #btn #reset, #contact-content #btn #submit {
-  padding: 10px 20px;
+  padding: 10px 25px;
   margin: 20px 20px;
   background-color: #fe6162;
   border-radius: 30px;
   color: #fff;
   border: 0;
+  font-size: 14px;
+}
+
+#contact-content #btn #reset:hover, #contact-content #btn #submit:hover {
+  background-color: #a8dcdf;
 }
 /*# sourceMappingURL=contact.css.map */

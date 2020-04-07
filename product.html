@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yulita Bakery</title>
+
+    <!-- Bootatrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- my CSS -->
+    <link rel="stylesheet" href="./product.css">
+
+</head>
+
+<body>
+    <div id="bg">
+        <nav>
+            <ul>
+                <div id="logo">
+                    <a href="index.html">
+                        <li>Yulita</li>
+                        <br>
+                        <li>Bakery</li>
+                    </a>
+                </div>
+                <div id="content">
+                    <li><a href="story.html" id="story">品牌故事</a></li>
+                    <li><a href="new.html" id="new">最新消息</a></li>
+                    <li><a href="store.html" id="store">門市據點</a></li>
+                    <li><a href="contact.html" id="contact">聯絡我們</a></li>
+                    <li><a href="product.html" id="product">商品專區</a></li>
+                </div>
+                <div id="nav-btn">
+                    <li id="login"><a href="#"><img src="img/login.png"></a></li>
+                    <li id="car"><a href="#"><img src="img/car.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="banner">
+        <img src="./img/product-banner.jpg" alt="banner">
+    </section>
+
+    <div id="product-content">
+        <!-- card -->
+        <div class="container" id="icon">
+            <h1 class="text-center py-5">商品專區</h1>
+            <div class="card-group">
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/cake.png" class="card-img-top mx-auto card-icon p-3" alt="..." id="icon1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">生日蛋糕</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300" data-goto-target="#birthday" data-goto-duration="200">
+                    <img src="./img/bread.png" class="card-img-top mx-auto card-icon p-3" alt="..." id="icon2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">美味麵包</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/wedding.png" class="card-img-top mx-auto card-icon p-3" alt="..." id="icon3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">喜餅禮盒</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/foot.png" class="card-img-top mx-auto card-icon p-3" alt="..." id="icon4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">彌月蛋糕</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/snack.png" class="card-img-top mx-auto card-icon p-3" alt="..." id="icon5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">點心餐盒</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="birthday">
+            <h2 class="text-center py-4 my-5">生日蛋糕</h2>
+            <div class="card-group">
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/birthdaycake1.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">甜蜜草莓</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/birthdaycake2.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">水果派對</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/birthdaycake3.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">巧克力蛋糕</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/birthdaycake4.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">藍莓蛋糕</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="bread">
+            <h2 class="text-center py-4 my-5">美味麵包</h2>
+            <div class="card-group">
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/bread1.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">巧克力甜甜圈</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/bread2.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">愛心牛角</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/bread3.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">番茄火腿</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/bread4.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">獨家菠蘿</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="wedding">
+            <h2 class="text-center py-4 my-5">喜餅禮盒</h2>
+            <div class="card-group">
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/weddingcake1.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">純潔的愛</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/weddingcake2.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">情深不知幾何</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/weddingcake3.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">藍色和你</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/weddingcake4.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Love</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="baby">
+            <h2 class="text-center py-4 my-5">彌月蛋糕</h2>
+            <div class="card-group">
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/babycake1.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">房子餅乾</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/babycake2.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">粉紅之心</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/babycake3.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">可愛小馬</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/babycake4.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">零食風暴</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="snack">
+            <h2 class="text-center py-4 my-5">點心餐盒</h2>
+            <div class="card-group">
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/snack1.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">迪芬蛋糕</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/snack2.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">玫瑰玫瑰我愛你</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/snack3.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">紫羅蘭之夜</h5>
+                    </div>
+                </div>
+                <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./img/snack4.jpg" class="card-img-top mx-auto card-icon" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">海洋之心</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- Bootstrap JS CDN -->
+    <!-- 執行完所有HTML再執行JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+       <!-- jQuery CDN -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="product.js"></script>
+
+   
+</body>
+</html>

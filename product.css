@@ -93,29 +93,100 @@ nav ul #nav-btn #car {
 
 #product-content h2 {
   color: #fff;
-  background-color: #a8dcdf;
+  background-color: #ffb938;
 }
 
 #product-content h5 {
   color: #272727;
 }
 
-#product-content #icon1, #product-content #icon2, #product-content #icon3, #product-content #icon4, #product-content #icon5 {
+#product-content #icon1,
+#product-content #icon2,
+#product-content #icon3,
+#product-content #icon4,
+#product-content #icon5 {
   width: 100px;
   height: 100px;
-  background-color: #FAF1D6;
+  background-color: #faf1d6;
   border-radius: 10px;
 }
 
-#product-content #icon1:hover, #product-content #icon2:hover, #product-content #icon3:hover, #product-content #icon4:hover, #product-content #icon5:hover {
+#product-content #icon1:hover,
+#product-content #icon2:hover,
+#product-content #icon3:hover,
+#product-content #icon4:hover,
+#product-content #icon5:hover {
   background-color: #a8dcdf;
 }
 
-#product-content #birthday img, #product-content #bread img, #product-content #wedding img, #product-content #baby img, #product-content #snack img {
+#product-content #birthday img,
+#product-content #bread img,
+#product-content #wedding img,
+#product-content #baby img,
+#product-content #snack img {
   width: 200px !important;
   -webkit-box-sizing: cover;
           box-sizing: cover;
   overflow: hidden;
   background: none;
+}
+
+#product-content #birthday .buy,
+#product-content #bread .buy,
+#product-content #wedding .buy,
+#product-content #baby .buy,
+#product-content #snack .buy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  padding: 0 10px;
+}
+
+#product-content #birthday .buy .buy-num,
+#product-content #bread .buy .buy-num,
+#product-content #wedding .buy .buy-num,
+#product-content #baby .buy .buy-num,
+#product-content #snack .buy .buy-num {
+  text-align: center;
+}
+
+#product-content #birthday .buy button,
+#product-content #bread .buy button,
+#product-content #wedding .buy button,
+#product-content #baby .buy button,
+#product-content #snack .buy button {
+  background-color: #a8dcdf;
+  border: 0;
+  color: #fff;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+#product-content #birthday .buy button:hover,
+#product-content #bread .buy button:hover,
+#product-content #wedding .buy button:hover,
+#product-content #baby .buy button:hover,
+#product-content #snack .buy button:hover {
+  background-color: #ffb938;
+}
+
+#gototop {
+  background-color: #fe6162;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#gototop img {
+  height: 50px;
+  text-align: center;
+  padding: 10px;
 }
 /*# sourceMappingURL=product.css.map */

@@ -37,7 +37,7 @@
                 </div>
                 <div id="nav-btn">
                     <li id="login"><a href="#"><img src="img/login.png"></a></li>
-                    <li id="car"><a href="#"><img src="img/car.png"></a></li>
+                    <li id="car" data-goto-target="#check" data-goto-duration="1200"><img src="img/car.png"></li>
                 </div>
             </ul>
         </nav>
@@ -113,6 +113,8 @@
                             <input type="number" class="buy-num" id="num1-2" name="bc1" min="0" step="1" value="0">
                             <button class="buy-btn" id="btn1-2">加入購物車</button>
                         </div>
+                        <div id="t1"></div>
+                        <div id="t2"></div>
                     </div>
                 </div>
                 <div class="card border-0" data-aos="flip-left" data-aos-delay="300">
@@ -149,8 +151,8 @@
                         <h5 class="card-title">巧克力甜甜圈</h5>
                         <p>$250/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num2-1" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn2-1">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -158,10 +160,10 @@
                     <img src="./img/bread2.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">愛心牛角</h5>
-                        <p>$250/個</p>
+                        <p>$200/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num2-2" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn2-2">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -169,10 +171,10 @@
                     <img src="./img/bread3.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">番茄火腿</h5>
-                        <p>$250/個</p>
+                        <p>$150/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num2-3" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn2-3">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -180,16 +182,18 @@
                     <img src="./img/bread4.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">獨家菠蘿</h5>
-                        <p>$250/個</p>
+                        <p>$100/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num2-4" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn2-4">加入購物車</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <!-- 喜餅禮盒 -->
         <div class="container" id="wedding">
             <h2 class="text-center py-4 my-5">喜餅禮盒</h2>
             <div class="card-group">
@@ -199,8 +203,8 @@
                         <h5 class="card-title">純潔的愛</h5>
                         <p>$250/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num3-1" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn3-1">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -208,10 +212,10 @@
                     <img src="./img/weddingcake2.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">情深不知幾何</h5>
-                        <p>$250/個</p>
+                        <p>$200/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num3-2" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn3-2">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -219,10 +223,10 @@
                     <img src="./img/weddingcake3.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">藍色和你</h5>
-                        <p>$250/個</p>
+                        <p>$150/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num3-3" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn3-3">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -230,16 +234,18 @@
                     <img src="./img/weddingcake4.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">Love</h5>
-                        <p>$250/個</p>
+                        <p>$100/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num3-4" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn3-4">加入購物車</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <!-- 彌月蛋糕 -->
         <div class="container" id="baby">
             <h2 class="text-center py-4 my-5">彌月蛋糕</h2>
             <div class="card-group">
@@ -249,8 +255,8 @@
                         <h5 class="card-title">房子餅乾</h5>
                         <p>$250/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num4-1" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn4-1">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -258,10 +264,10 @@
                     <img src="./img/babycake2.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">粉紅之心</h5>
-                        <p>$250/個</p>
+                        <p>$200/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num4-2" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn4-2">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -269,10 +275,10 @@
                     <img src="./img/babycake3.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">可愛小馬</h5>
-                        <p>$250/個</p>
+                        <p>$150/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num4-3" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn4-3">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -280,16 +286,17 @@
                     <img src="./img/babycake4.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">零食風暴</h5>
-                        <p>$250/個</p>
+                        <p>$100/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num4-4" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn4-4">加入購物車</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- 點心餐盒 -->
         <div class="container" id="snack">
             <h2 class="text-center py-4 my-5">點心餐盒</h2>
             <div class="card-group">
@@ -299,8 +306,8 @@
                         <h5 class="card-title">迪芬蛋糕</h5>
                         <p>$250/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num5-1" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn5-1">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -308,10 +315,10 @@
                     <img src="./img/snack2.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">玫瑰玫瑰我愛你</h5>
-                        <p>$250/個</p>
+                        <p>$200/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num5-2" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn5-2">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -319,10 +326,10 @@
                     <img src="./img/snack3.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">紫羅蘭之夜</h5>
-                        <p>$250/個</p>
+                        <p>$150/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num5-3" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn5-3">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -330,10 +337,10 @@
                     <img src="./img/snack4.jpg" class="card-img-top mx-auto card-icon" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">海洋之心</h5>
-                        <p>$250/個</p>
+                        <p>$100/個</p>
                         <div class="buy">
-                            <input type="number" class="buy-num" id="bc1" name="bc1" min="0" step="1" value="0">
-                            <button>加入購物車</button>
+                            <input type="number" class="buy-num" id="num5-4" name="bc1" min="0" step="1" value="0">
+                            <button class="buy-btn" id="btn5-4">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -341,9 +348,134 @@
         </div>
     </div>
 
+    <div id="check-box">
+        <div id="check">
+            <h1>訂單</h1>
+            <div id="title">
+                <p>名稱</p>
+                <p>數量</p>
+                <p>價錢</p>
+            </div>
+            <hr>
+            <div id="check1-1">
+                <div id="name1-1"></div>
+                <div id="amount1-1"></div>
+                <div id="price1-1"></div>
+            </div>
+            <div id="check1-2">
+                <div id="name1-2"></div>
+                <div id="amount1-2"></div>
+                <div id="price1-2"></div>
+            </div>
+            <div id="check1-3">
+                <div id="name1-3"></div>
+                <div id="amount1-3"></div>
+                <div id="price1-3"></div>
+            </div>
+            <div id="check1-4">
+                <div id="name1-4"></div>
+                <div id="amount1-4"></div>
+                <div id="price1-4"></div>
+            </div>
+            <div id="check2-1">
+                <div id="name2-1"></div>
+                <div id="amount2-1"></div>
+                <div id="price2-1"></div>
+            </div>
+            <div id="check2-2">
+                <div id="name2-2"></div>
+                <div id="amount2-2"></div>
+                <div id="price2-2"></div>
+            </div>
+            <div id="check2-3">
+                <div id="name2-3"></div>
+                <div id="amount2-3"></div>
+                <div id="price2-3"></div>
+            </div>
+            <div id="check2-4">
+                <div id="name2-4"></div>
+                <div id="amount2-4"></div>
+                <div id="price2-4"></div>
+            </div>
+            <div id="check3-1">
+                <div id="name3-1"></div>
+                <div id="amount3-1"></div>
+                <div id="price3-1"></div>
+            </div>
+            <div id="check3-2">
+                <div id="name3-2"></div>
+                <div id="amount3-2"></div>
+                <div id="price3-2"></div>
+            </div>
+            <div id="check3-3">
+                <div id="name3-3"></div>
+                <div id="amount3-3"></div>
+                <div id="price3-3"></div>
+            </div>
+            <div id="check3-4">
+                <div id="name3-4"></div>
+                <div id="amount3-4"></div>
+                <div id="price3-4"></div>
+            </div>
+
+            <div id="check4-1">
+                <div id="name4-1"></div>
+                <div id="amount4-1"></div>
+                <div id="price4-1"></div>
+            </div>
+            <div id="check4-2">
+                <div id="name4-2"></div>
+                <div id="amount4-2"></div>
+                <div id="price4-2"></div>
+            </div>
+            <div id="check4-3">
+                <div id="name4-3"></div>
+                <div id="amount4-3"></div>
+                <div id="price4-3"></div>
+            </div>
+            <div id="check4-4">
+                <div id="name4-4"></div>
+                <div id="amount4-4"></div>
+                <div id="price4-4"></div>
+            </div>
+
+            <div id="check5-1">
+                <div id="name5-1"></div>
+                <div id="amount5-1"></div>
+                <div id="price5-1"></div>
+            </div>
+            <div id="check5-2">
+                <div id="name5-2"></div>
+                <div id="amount5-2"></div>
+                <div id="price5-2"></div>
+            </div>
+            <div id="check5-3">
+                <div id="name5-3"></div>
+                <div id="amount5-3"></div>
+                <div id="price5-3"></div>
+            </div>
+            <div id="check5-4">
+                <div id="name5-4"></div>
+                <div id="amount5-4"></div>
+                <div id="price5-4"></div>
+            </div>
+            <div id="sum">
+                <h5>總金額：</h5>
+                <div id="total"></div>
+            </div>
+        </div>
+
+        <div id="buy-box">
+            <button id="go-to-buy">結帳</button>
+        </div>
+
+    </div>
+
     <div id="gototop" data-goto-target="#bg" data-goto-duration="1000">
         <img src="./img/gototop.png" alt="">
     </div>
+
+
 
 
     <!-- Bootstrap JS CDN -->

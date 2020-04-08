@@ -12,3 +12,9 @@ $("#signin").click(function(){
     $("#signup-content").hide(300);
 });
 
+var xhr = new XMLHttpRequest();
+xhr.open("post","https://hexschool-tutorial.herokuapp.com/api/signup");
+// setRequestHeader("傳送格式","格式")
+xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xhr.send("email=abcde@gmail.com&password=123456");
+

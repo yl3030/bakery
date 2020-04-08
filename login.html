@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Yulita Bakery</title>
+</head>
+
+<body>
+    <div id="bg">
+        <nav>
+            <ul>
+                <div id="logo">
+                    <a href="index.html">
+                        <li>Yulita</li>
+                        <br>
+                        <li>Bakery</li>
+                    </a>
+                </div>
+                <div id="content">
+                    <li><a href="story.html" id="story">品牌故事</a></li>
+                    <li><a href="new.html" id="new">最新消息</a></li>
+                    <li><a href="store.html" id="store">門市據點</a></li>
+                    <li><a href="contact.html" id="contact">聯絡我們</a></li>
+                </div>
+                <div id="nav-btn">
+                    <li id="login"><a href="login.html"><img src="img/login.png"></a></li>
+                </div>
+            </ul>
+        </nav>
+        <section>
+            <div id="choice">
+                <div class="choice" id="signin">登入</div>
+                <div class="choice" id="signup">註冊</div>
+            </div>
+
+            <div id="signin-content">
+                <div class="form-box">
+                    <label for="account">帳號</label>
+                    <input type="text" name="account" id="account" required>
+                </div>
+                <div class="form-box">
+                    <label for="password">密碼</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="btn">
+                    <button>登入</button>
+                </div>
+                <br>
+                <a href="#" id="forget">忘記密碼</a>
+            </div>
+
+
+            <div id="signup-content">
+                <div class="form-box">
+                    <label for="name">ID</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-box">
+                    <label for="account">帳號</label>
+                    <input type="text" name="account" id="account" required>
+                </div>
+                <div class="form-box">
+                    <label for="password">密碼</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-box">
+                    <label for="password2">再輸入一次密碼</label>
+                    <input type="password" name="password2" id="password2" required>
+                </div>
+
+                <button>註冊</button>
+            </div>
+        </section>
+
+       
+
+
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>

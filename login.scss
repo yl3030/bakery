@@ -1,0 +1,188 @@
+$sColor: #a8dcdf;
+$bColor: #fe6162;
+$fColor: #565656;
+$hMargin-left: 100px;
+$hMargin-top: 25px;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 微軟正黑體;
+	box-sizing: border-box;
+}
+
+#bg {
+	background-image: url(./img/background.jpg);
+	height: 100vh;
+	// 背景填滿整個元素
+	background-size: cover;
+}
+
+nav {
+	height: 100px;
+	ul {
+		li {
+			display: inline-block;
+		}
+		#logo {
+			width: 100px;
+			border-right: 2px solid $sColor;
+			margin-top: $hMargin-top;
+			margin-left: $hMargin-left;
+			display: inline-block;
+			a {
+				color: $bColor;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: bold;
+				font-family: "Arial Black";
+			}
+		}
+		#content {
+			display: inline-block;
+			vertical-align: top;
+			li a {
+				display: inline-block;
+				line-height: 56px;
+				padding: 0 20px;
+				margin-top: $hMargin-top;
+				font-size: 16px;
+				color: $fColor;
+				font-weight: 900;
+				text-decoration: none;
+				&:hover {
+					color: $bColor;
+				}
+			}
+		}
+		#nav-btn {
+			display: inline-block;
+			position: fixed;
+			right: 70px;
+			top: 35px;
+			img {
+				height: 45px;
+				background-color: $bColor;
+				border-radius: 50%;
+				padding: 9px;
+				&:hover {
+					background-color: $fColor;
+				}
+			}
+		}
+	}
+}
+
+section {
+	margin-left: $hMargin-left;
+	#choice {
+		.choice {
+			display: inline-block;
+			padding: 10px 0;
+			margin-top: 100px;
+			font-size: 18px;
+			text-align: center;
+			width: 250px;
+        }
+        #signin {
+            background-color: $sColor;
+            color: #fff;
+            cursor: pointer;
+        }
+        #signup{
+            cursor: pointer;
+        }
+	}
+
+	
+
+	#signin-content {
+        // display: none;
+		margin-top: 80px;
+		.form-box {
+			width: 500px;
+			display: grid;
+			grid-template-columns: 30% 70%;
+			margin: 30px 0;
+			height: 30px;
+			align-items: center;
+			padding: 0 15px;
+		}
+		label {
+			text-align: center;
+			font-size: 18px;
+			color: $bColor;
+		}
+
+		#account,
+		#password {
+			background: none;
+			border: 1px solid $bColor;
+			border-radius: 5px;
+			font-size: 14px;
+			height: 40px;
+		}
+
+
+			button {
+				padding: 10px 25px;
+				margin-top: 50px;
+				background-color: $bColor;
+				border-radius: 30px;
+				color: #fff;
+				border: 0;
+				font-size: 14px;
+				width: 500px;
+				&:hover {
+					background-color: $sColor;
+				}
+            }
+
+		#forget {
+			font-size: 14px;
+			color: $sColor;
+			&:hover {
+				color: $bColor;
+			}
+		}
+	}
+
+	#signup-content {
+        display: none;
+        .form-box {
+			width: 500px;
+			display: grid;
+			grid-template-columns: 30% 70%;
+			margin: 30px 0;
+			height: 30px;
+			align-items: center;
+			padding: 0 15px;
+        }
+        label {
+			// text-align: center;
+			font-size: 18px;
+			color: $bColor;
+        }
+        
+        #name, #account, #password, #password2{
+            background: none;
+			border: 1px solid $bColor;
+			border-radius: 5px;
+			font-size: 14px;
+			height: 40px;
+        }
+        button {
+            padding: 10px 25px;
+            margin-top: 50px;
+            background-color: $bColor;
+            border-radius: 30px;
+            color: #fff;
+            border: 0;
+            font-size: 14px;
+            width: 500px;
+            &:hover {
+                background-color: $sColor;
+            }
+        }
+	}
+}

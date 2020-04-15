@@ -74,7 +74,8 @@ nav {
 }
 
 #story-content{
-    margin: 50px $hMargin-left;
+	width: 1000px;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;

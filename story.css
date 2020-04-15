@@ -78,7 +78,8 @@ nav ul #nav-btn img:hover {
 }
 
 #story-content {
-  margin: 50px 100px;
+  width: 1000px;
+  margin: 50px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];

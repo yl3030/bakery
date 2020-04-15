@@ -74,23 +74,35 @@ nav {
 	}
 }
 
-#store-content{
-    width: 600px;
-    margin: 0 auto;
-    h1{
-        color: $bColor;
-        margin: 50px auto;
-    }
-    h2{
-        font-size: 24px;
-        border-left: 7px solid $sColor;
-        padding-left: 7px;
-    }
-    #store1, #store2, #store3{
-        color: rgb(39, 39, 39);
-        margin: 30px 0;
-    }
-
+.carousel{
+	width: 1000px;
+	margin: 50px auto;
 }
 
-
+.store{
+	width: 1000px;
+	margin: 100px auto;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	h2{
+		color: $bColor;
+	}
+	h2::before{
+		content:'';
+		position: absolute;
+		margin-top: 70px;
+		width: 30px;
+		height: 5px;
+		background-color: $bColor;
+	}
+	div{
+		padding: 100px 0 0 0;
+		p{
+			margin: 5px;
+		}
+	}
+	iframe{
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+}

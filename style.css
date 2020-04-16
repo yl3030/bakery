@@ -75,6 +75,57 @@ nav ul #nav-btn img:hover {
   background-color: #565656;
 }
 
+#menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#menu img {
+  height: 30px;
+}
+
+#menu:active #menu-list {
+  right: 0;
+}
+
+#menu:hover #menu-list {
+  right: 0;
+}
+
+#menu #menu-list {
+  height: 100vh;
+  width: 300px;
+  background-color: #faf1d6;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu #menu-list li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+#menu #menu-list li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#menu #menu-list #menu-home {
+  background-color: #fe6162;
+}
+
+#menu #menu-list #menu-home a {
+  color: #fff;
+}
+
 section #title {
   font-size: 70px;
   font-weight: 900;
@@ -102,6 +153,7 @@ section #s-title p {
 section #home-shop {
   padding: 10px 20px;
   margin: 30px 0 0 100px;
+  background-color: #fff;
   border: 2px solid #fe6162;
   font-size: 16px;
   border-radius: 30px;
@@ -200,5 +252,89 @@ footer #copy {
   -ms-grid-column-span: 2;
   grid-column: 1/3;
   margin: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  #menu #menu-list {
+    width: 200px;
+  }
+  section #title {
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+  section #s-title {
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  section #s-title p {
+    display: block;
+  }
+  section #home-shop {
+    margin: 30px 0 0 50px;
+  }
+  section #contact-btn {
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  #menu li a {
+    font-size: 24px;
+  }
+  section #title {
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+  section #s-title {
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  section #s-title p {
+    display: block;
+  }
+  section #home-shop {
+    margin: 30px 0 0 50px;
+  }
+  section #contact-btn {
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  section #title {
+    margin-left: 100px;
+    margin-top: 80px;
+  }
+  section #s-title {
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  section #s-title p {
+    display: inline-block;
+  }
+  section #home-shop {
+    margin: 30px 0 0 100px;
+  }
+  section #contact-btn {
+    left: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

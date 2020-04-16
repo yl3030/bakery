@@ -13,10 +13,6 @@ $hMargin-top: 25px;
 	box-sizing: border-box;
 }
 
-body {
-	// background-color: #fef7ea;
-}
-
 nav {
 	height: 100px;
 	ul {
@@ -81,6 +77,12 @@ nav {
 	margin: 50px auto;
 }
 
+h1 {
+	display: none;
+	color: $bColor;
+	margin: 50px 0;
+}
+
 #new-content{
 	max-width: 1000px;
 	margin: 0 auto;
@@ -101,7 +103,6 @@ nav {
 			}
 		}
 		.date{
-			// background-color: $sColor;
 			text-align: right;
 			color: $fColor;
 			.month{
@@ -111,6 +112,11 @@ nav {
 				font-size: 45px;
 				font-weight: 700;
 			}
+		}
+		.date-RWD{
+			display: none;
+			font-size: 14px;
+			color: $fColor;
 		}
 	}
 }
@@ -162,8 +168,198 @@ footer{
 		#copy{
 			text-align: center;
 			grid-column: 1/3;
-			margin: 50px 0;
+			padding: 50px 0;
 		}
 		
 	}
 
+	#menu {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		display: none;
+		cursor: pointer;
+		img {
+			height: 30px;
+		}
+		&:active #menu-list {
+			right: 0;
+		}
+		&:hover #menu-list {
+			right: 0;
+		}
+		#menu-list {
+			// padding: 20px;
+			height: 100vh;
+			width: 300px;
+			background-color: $light-yellow;
+			position: fixed;
+			top: 0;
+			right: -300px;
+			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+			transition: 1s;
+			li {
+				list-style: none;
+				padding: 15px 15px;
+				a {
+					text-decoration: none;
+					color: rgb(39, 39, 39);
+				}
+			}
+			#menu-home {
+				background-color: $bColor;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	// 手機
+	@media screen and (max-width: 768px) {
+		nav {
+			display: none;
+		}
+		#menu {
+			display: block;
+		}
+		#new-banner{
+			margin: 0;
+			img{
+				width: 100%;
+			}
+		}
+		h1{
+			display: block;
+			text-align: center;
+		}
+		#new-content{
+			margin: 0 10%;
+			.new{
+				grid-template-columns: repeat(1,1fr);
+				margin: 50px 0;
+				img{
+					margin: 0 auto;
+				}
+				h2{
+					padding: 10px 0;
+				}
+				.date{
+					display: none;
+				}
+				.date-RWD{
+					display: block;
+				}
+			}
+		}
+		
+		footer{
+			#footer-box{
+				display: block;
+				padding: 0 20px;
+				#link{
+					padding:50px 0;
+					li{
+						display: block;
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+	}
+
+	// 平板
+	@media screen and (min-width: 769px) {
+		nav {
+			display: none;
+		}
+		#menu {
+			display: block;
+		}
+		#new-banner{
+			margin: 0 auto;
+			img{
+				width: 100%;
+			}
+		}
+		h1{
+			display: block;
+			text-align: center;
+		}
+		#new-content{
+			margin: 0;
+			.new{
+				grid-template-columns: 1fr 1fr;
+		margin: 30px 0;
+				img{
+					margin: 0 auto;
+				}
+				h2{
+					// margin-bottom: 20px;
+					padding: 0;
+				}
+				.date{
+					display: none;
+				}
+				.date-RWD{
+					display: block;
+				}
+			}
+		}
+		
+		footer{
+			#footer-box{
+				padding: 50px 180px;
+				#link{
+					li{
+						display: block;
+						padding: 5px;
+					}
+				}	
+			}
+		}
+	}
+
+	@media screen and (min-width: 1025px) {
+		nav {
+			display: block;
+		}
+		#menu {
+			display: none;
+		}
+		h1{
+			display: none;
+		}
+		#new-content{
+			max-width: 1000px;
+			margin: 30px auto;
+			.new{
+				grid-template-columns: 35% 45% 20%;
+				img{
+					margin: 0;
+				}
+				h2{
+					padding: 0;
+				}
+				.date{
+					display: block;
+				}
+				.date-RWD{
+					display: none;
+				}
+			}
+		}
+		footer{
+			#footer-box{
+				padding: 50px 0;
+				#link{
+					li{
+						display: inline-block;
+						padding: 3px;
+					}
+				}
+				
+			}
+		}
+	}
+	

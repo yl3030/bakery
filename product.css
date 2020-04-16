@@ -89,6 +89,7 @@ nav ul #nav-btn #car {
 
 #product-content {
   margin: 50px auto;
+  max-width: 1000px;
 }
 
 #product-content h2 {
@@ -106,7 +107,14 @@ nav ul #nav-btn #car {
 }
 
 #product-content h5 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+#product-content p {
   color: #272727;
+  font-weight: 900;
 }
 
 #product-content #icon1,
@@ -138,24 +146,164 @@ nav ul #nav-btn #car {
           align-items: center;
 }
 
-#product-content #birthday img,
-#product-content #bread img,
-#product-content #wedding img,
-#product-content #baby img,
-#product-content #snack img {
-  width: 200px !important;
-  -webkit-box-sizing: cover;
-          box-sizing: cover;
-  overflow: hidden;
-  background: none;
+#product-content #birthday #pic1-1,
+#product-content #bread #pic1-1,
+#product-content #wedding #pic1-1,
+#product-content #baby #pic1-1,
+#product-content #snack #pic1-1 {
+  background-image: url(./img/birthdaycake1.jpg);
 }
 
-#product-content #birthday img:hover,
-#product-content #bread img:hover,
-#product-content #wedding img:hover,
-#product-content #baby img:hover,
-#product-content #snack img:hover {
-  background-color: #000;
+#product-content #birthday #pic1-2,
+#product-content #bread #pic1-2,
+#product-content #wedding #pic1-2,
+#product-content #baby #pic1-2,
+#product-content #snack #pic1-2 {
+  background-image: url(./img/birthdaycake2.jpg);
+}
+
+#product-content #birthday #pic1-3,
+#product-content #bread #pic1-3,
+#product-content #wedding #pic1-3,
+#product-content #baby #pic1-3,
+#product-content #snack #pic1-3 {
+  background-image: url(./img/birthdaycake3.jpg);
+}
+
+#product-content #birthday #pic1-4,
+#product-content #bread #pic1-4,
+#product-content #wedding #pic1-4,
+#product-content #baby #pic1-4,
+#product-content #snack #pic1-4 {
+  background-image: url(./img/birthdaycake4.jpg);
+}
+
+#product-content #birthday #pic2-1,
+#product-content #bread #pic2-1,
+#product-content #wedding #pic2-1,
+#product-content #baby #pic2-1,
+#product-content #snack #pic2-1 {
+  background-image: url(./img/bread1.jpg);
+}
+
+#product-content #birthday #pic2-2,
+#product-content #bread #pic2-2,
+#product-content #wedding #pic2-2,
+#product-content #baby #pic2-2,
+#product-content #snack #pic2-2 {
+  background-image: url(./img/bread2.jpg);
+}
+
+#product-content #birthday #pic2-3,
+#product-content #bread #pic2-3,
+#product-content #wedding #pic2-3,
+#product-content #baby #pic2-3,
+#product-content #snack #pic2-3 {
+  background-image: url(./img/bread3.jpg);
+}
+
+#product-content #birthday #pic2-4,
+#product-content #bread #pic2-4,
+#product-content #wedding #pic2-4,
+#product-content #baby #pic2-4,
+#product-content #snack #pic2-4 {
+  background-image: url(./img/bread4.jpg);
+}
+
+#product-content #birthday #pic3-1,
+#product-content #bread #pic3-1,
+#product-content #wedding #pic3-1,
+#product-content #baby #pic3-1,
+#product-content #snack #pic3-1 {
+  background-image: url(./img/weddingcake1.jpg);
+}
+
+#product-content #birthday #pic3-2,
+#product-content #bread #pic3-2,
+#product-content #wedding #pic3-2,
+#product-content #baby #pic3-2,
+#product-content #snack #pic3-2 {
+  background-image: url(./img/weddingcake2.jpg);
+}
+
+#product-content #birthday #pic3-3,
+#product-content #bread #pic3-3,
+#product-content #wedding #pic3-3,
+#product-content #baby #pic3-3,
+#product-content #snack #pic3-3 {
+  background-image: url(./img/weddingcake3.jpg);
+}
+
+#product-content #birthday #pic3-4,
+#product-content #bread #pic3-4,
+#product-content #wedding #pic3-4,
+#product-content #baby #pic3-4,
+#product-content #snack #pic3-4 {
+  background-image: url(./img/weddingcake4.jpg);
+}
+
+#product-content #birthday #pic4-1,
+#product-content #bread #pic4-1,
+#product-content #wedding #pic4-1,
+#product-content #baby #pic4-1,
+#product-content #snack #pic4-1 {
+  background-image: url(./img/babycake1.jpg);
+}
+
+#product-content #birthday #pic4-2,
+#product-content #bread #pic4-2,
+#product-content #wedding #pic4-2,
+#product-content #baby #pic4-2,
+#product-content #snack #pic4-2 {
+  background-image: url(./img/babycake2.jpg);
+}
+
+#product-content #birthday #pic4-3,
+#product-content #bread #pic4-3,
+#product-content #wedding #pic4-3,
+#product-content #baby #pic4-3,
+#product-content #snack #pic4-3 {
+  background-image: url(./img/babycake3.jpg);
+}
+
+#product-content #birthday #pic4-4,
+#product-content #bread #pic4-4,
+#product-content #wedding #pic4-4,
+#product-content #baby #pic4-4,
+#product-content #snack #pic4-4 {
+  background-image: url(./img/babycake4.jpg);
+}
+
+#product-content #birthday #pic5-1,
+#product-content #bread #pic5-1,
+#product-content #wedding #pic5-1,
+#product-content #baby #pic5-1,
+#product-content #snack #pic5-1 {
+  background-image: url(./img/snack1.jpg);
+}
+
+#product-content #birthday #pic5-2,
+#product-content #bread #pic5-2,
+#product-content #wedding #pic5-2,
+#product-content #baby #pic5-2,
+#product-content #snack #pic5-2 {
+  background-image: url(./img/snack2.jpg);
+}
+
+#product-content #birthday #pic5-3,
+#product-content #bread #pic5-3,
+#product-content #wedding #pic5-3,
+#product-content #baby #pic5-3,
+#product-content #snack #pic5-3 {
+  background-image: url(./img/snack3.jpg);
+}
+
+#product-content #birthday #pic5-4,
+#product-content #bread #pic5-4,
+#product-content #wedding #pic5-4,
+#product-content #baby #pic5-4,
+#product-content #snack #pic5-4 {
+  background-image: url(./img/snack4.jpg);
 }
 
 #product-content #birthday .img-box,
@@ -163,9 +311,8 @@ nav ul #nav-btn #car {
 #product-content #wedding .img-box,
 #product-content #baby .img-box,
 #product-content #snack .img-box {
-  height: 250px;
-  width: 250px;
-  background-image: url(./img/birthdaycake1.jpg);
+  height: 220px;
+  width: 220px;
   background-size: contain;
 }
 
@@ -174,8 +321,8 @@ nav ul #nav-btn #car {
 #product-content #wedding .img-box .hover-color,
 #product-content #baby .img-box .hover-color,
 #product-content #snack .img-box .hover-color {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -188,9 +335,11 @@ nav ul #nav-btn #car {
   background-color: #fff;
   border: 0;
   color: #565656;
+  padding: 8px 30px;
   display: none;
   border-radius: 5px;
-  margin: 150px auto;
+  margin: 150px 40px;
+  cursor: pointer;
 }
 
 #product-content #birthday .img-box .buy-btn:hover,
@@ -200,6 +349,8 @@ nav ul #nav-btn #car {
 #product-content #snack .img-box .buy-btn:hover {
   background-color: #ffb938;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #product-content #birthday .img-box:hover .hover-color,
@@ -219,7 +370,7 @@ nav ul #nav-btn #car {
 }
 
 #check-box {
-  background-color: #fef7ea;
+  background-color: #faf1d6;
   padding: 20px 0;
   margin-top: 30px;
 }
@@ -346,5 +497,71 @@ nav ul #nav-btn #car {
   height: 50px;
   text-align: center;
   padding: 10px;
+}
+
+footer {
+  background-color: #ffb938;
+  color: #fff;
+}
+
+footer #footer-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer li {
+  display: inline;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer li a:hover {
+  color: #faf1d6;
+  text-decoration: none;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+footer #sub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 20%;
+      grid-template-columns: 70% 20%;
+  grid-gap: 10px;
+}
+
+footer #sub input {
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer #sub button {
+  color: #ffb938;
+  border: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer #copy {
+  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin: 50px 0;
 }
 /*# sourceMappingURL=product.css.map */

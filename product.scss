@@ -1,6 +1,8 @@
 $sColor: #a8dcdf;
 $bColor: #fe6162;
 $fColor: #565656;
+$yellow: #ffb938;
+$light-yellow: #faf1d6;
 $hMargin-left: 100px;
 $hMargin-top: 25px;
 
@@ -9,10 +11,6 @@ $hMargin-top: 25px;
 	padding: 0;
 	font-family: 微軟正黑體;
 	box-sizing: border-box;
-}
-
-body {
-	// background-color: #fef7ea;
 }
 
 nav {
@@ -88,7 +86,7 @@ nav {
 
 #product-content {
 	margin: 50px auto;
-
+	max-width: 1000px;
 	h2 {
 		font-size: 30px;
 		color: $bColor;
@@ -98,13 +96,19 @@ nav {
 		content:'';
 		width: 50px;
 		height: 3px;
-		background-color: #ffb938;
+		background-color: $yellow;
 		position: absolute;
 		margin: 55px 35px 0;
 	}
 
 	h5 {
+		font-size: 14px;
+		font-weight: normal;
+		margin-bottom: 3px;
+	}
+	p{
 		color: rgb(39, 39, 39);
+		font-weight: 900;
 	}
 	#icon1,
 	#icon2,
@@ -113,10 +117,10 @@ nav {
 	#icon5 {
 		width: 100px;
 		height: 100px;
-		background-color: #faf1d6;
+		background-color: $light-yellow;
 		border-radius: 10px;
 		&:hover {
-			background-color: #ffb938;
+			background-color: $yellow;
 		}
 	}
 	#birthday,
@@ -127,23 +131,73 @@ nav {
 		.card{
 			align-items: center;
 		}
-		img {
-			width: 200px !important;
-			box-sizing: cover;
-			overflow: hidden;
-			background: none;
-			&:hover{
-				background-color: #000;
-			}
+		#pic1-1{
+			background-image: url(./img/birthdaycake1.jpg);			
+		}
+		#pic1-2{
+			background-image: url(./img/birthdaycake2.jpg);
+		}
+		#pic1-3{
+			background-image: url(./img/birthdaycake3.jpg);
+		}
+		#pic1-4{
+			background-image: url(./img/birthdaycake4.jpg);
+		}
+		#pic2-1{
+			background-image: url(./img/bread1.jpg);
+		}
+		#pic2-2{
+			background-image: url(./img/bread2.jpg);
+		}
+		#pic2-3{
+			background-image: url(./img/bread3.jpg);
+		}
+		#pic2-4{
+			background-image: url(./img/bread4.jpg);
+		}
+		#pic3-1{
+			background-image: url(./img/weddingcake1.jpg);
+		}
+		#pic3-2{
+			background-image: url(./img/weddingcake2.jpg);
+		}
+		#pic3-3{
+			background-image: url(./img/weddingcake3.jpg);
+		}
+		#pic3-4{
+			background-image: url(./img/weddingcake4.jpg);
+		}
+		#pic4-1{
+			background-image: url(./img/babycake1.jpg);
+		}
+		#pic4-2{
+			background-image: url(./img/babycake2.jpg);
+		}
+		#pic4-3{
+			background-image: url(./img/babycake3.jpg);
+		}
+		#pic4-4{
+			background-image: url(./img/babycake4.jpg);
+		}
+		#pic5-1{
+			background-image: url(./img/snack1.jpg);
+		}
+		#pic5-2{
+			background-image: url(./img/snack2.jpg);
+		}
+		#pic5-3{
+			background-image: url(./img/snack3.jpg);
+		}
+		#pic5-4{
+			background-image: url(./img/snack4.jpg);
 		}
 		.img-box{
-			height: 250px;
-			width: 250px;
-			background-image: url(./img/birthdaycake1.jpg);
+			height: 220px;
+			width: 220px;
 			background-size: contain;
 			.hover-color{
-				width: 200px;
-				height: 200px;
+				width: 220px;
+				height: 220px;
 				background-color:rgba(0,0,0,0.5);
 				display: none;
 				}
@@ -151,14 +205,15 @@ nav {
 					background-color: #fff;
 					border: 0;
 					color: $fColor;
-					// padding: 8px ;
-					// margin-left: 5px;
+					padding: 8px 30px;
 					display: none;
 					border-radius: 5px;
-					margin: 150px auto;
+					margin: 150px 40px;
+					cursor: pointer;
 					&:hover {
-						background-color: #ffb938;
+						background-color: $yellow;
 						color: #fff;
+						transition: 0.3s;
 					}
 			}
 			&:hover{
@@ -176,7 +231,7 @@ nav {
 }
 
 #check-box {
-	background-color: #fef7ea;
+	background-color: $light-yellow;
 	padding: 20px 0;
 	margin-top: 30px;
 	#check {
@@ -220,8 +275,6 @@ nav {
 	#check5-4 {
 		display: grid;
 		grid-template-columns: 50% 25% 25%;
-		// height: 0;
-		// padding: 10px 0;
 		div {
 			text-align: center;
 			color: rgb(39, 39, 39);
@@ -272,4 +325,56 @@ nav {
 		text-align: center;
 		padding: 10px;
 	}
+}
+
+footer{
+background-color: $yellow;
+color: #fff;
+	#footer-box{
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 50px 0;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+	li{
+		display: inline;
+		font-size: 16px;
+		margin: 0 5px;
+		a{
+			text-decoration: none;
+			color: #fff;
+			&:hover{
+				color: $light-yellow;
+				text-decoration: none;
+			}
+		}
+	}
+	h3{
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	#sub{
+		display: grid;
+		grid-template-columns: 70% 20%;
+		grid-gap: 10px;
+		input{
+			border: 0;
+			padding: 5px;
+			border-radius: 5px;
+		}
+		button{
+			color: $yellow;
+			border: 0;
+			background-color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+	#copy{
+		text-align: center;
+		grid-column: 1/3;
+		margin: 50px 0;
+	}
+	
 }

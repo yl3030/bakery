@@ -80,20 +80,27 @@ nav {
 
 #banner {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 50px auto;
 	img {
 		height: 400px;
 	}
 }
 
 #product-content {
-	h1 {
-		color: $bColor;
-	}
+	margin: 50px auto;
 
 	h2 {
-		color: #fff;
+		font-size: 30px;
+		color: $bColor;
+		// background-color: #ffb938;
+	}
+	h2::before{
+		content:'';
+		width: 50px;
+		height: 3px;
 		background-color: #ffb938;
+		position: absolute;
+		margin: 55px 35px 0;
 	}
 
 	h5 {
@@ -109,7 +116,7 @@ nav {
 		background-color: #faf1d6;
 		border-radius: 10px;
 		&:hover {
-			background-color: $sColor;
+			background-color: #ffb938;
 		}
 	}
 	#birthday,
@@ -117,30 +124,54 @@ nav {
 	#wedding,
 	#baby,
 	#snack {
+		.card{
+			align-items: center;
+		}
 		img {
 			width: 200px !important;
 			box-sizing: cover;
 			overflow: hidden;
 			background: none;
-		}
-		.buy {
-			display: grid;
-			grid-template-columns: 40% 60%;
-			padding: 0 10px;
-			.buy-num {
-				text-align: center;
+			&:hover{
+				background-color: #000;
 			}
-			button {
-				background-color: $sColor;
-				border: 0;
-				color: #fff;
-				padding: 8px;
-				margin-left: 5px;
-				&:hover {
-					background-color: #ffb938;
+		}
+		.img-box{
+			height: 250px;
+			width: 250px;
+			background-image: url(./img/birthdaycake1.jpg);
+			background-size: contain;
+			.hover-color{
+				width: 200px;
+				height: 200px;
+				background-color:rgba(0,0,0,0.5);
+				display: none;
+				}
+				.buy-btn {
+					background-color: #fff;
+					border: 0;
+					color: $fColor;
+					// padding: 8px ;
+					// margin-left: 5px;
+					display: none;
+					border-radius: 5px;
+					margin: 150px auto;
+					&:hover {
+						background-color: #ffb938;
+						color: #fff;
+					}
+			}
+			&:hover{
+				.hover-color{
+					display: block;
+				}
+				.buy-btn{
+					display: inline-block;
 				}
 			}
 		}
+		
+			
 	}
 }
 

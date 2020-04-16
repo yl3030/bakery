@@ -78,8 +78,8 @@ nav ul #nav-btn img:hover {
 }
 
 #contact-content {
-  width: 600px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 #contact-content h1 {

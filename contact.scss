@@ -75,8 +75,8 @@ nav {
 }
 
 #contact-content{
-    width: 600px;
-    margin: 0 auto;
+    max-width:1000px;
+    margin: 50px auto;
     h1{
         color: $bColor;
         margin: 50px auto;

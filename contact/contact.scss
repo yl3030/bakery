@@ -16,6 +16,74 @@ $hMargin-top: 25px;
 body {
 	background-color: #fef7ea;
 }
+#rwd-nav{
+	display: none;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	#rwd-logo {
+		border-right: 2px solid $sColor;
+		display: inline-block;
+		margin: 10px 10px 10px 30px ;
+		padding: 0 15px;
+		li{
+			color: $bColor;
+			list-style: none;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+	#rwd-title{
+		display: inline-block;
+		color: $bColor;
+		vertical-align: top;
+		margin-top: 17px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#menu {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+		img {
+			height: 30px;
+		}
+		&:active #menu-list {
+			right: 0;
+		}
+		&:hover #menu-list {
+			right: 0;
+		}
+		#menu-list {
+			height: 100vh;
+			width: 300px;
+			background-color: $light-yellow;
+			position: fixed;
+			top: 0;
+			right: -305px;
+			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+			transition: 1s;
+			li {
+				list-style: none;
+				padding: 15px 15px;
+				a {
+					text-decoration: none;
+					color: rgb(39, 39, 39);
+				}
+			}
+			#menu-contact {
+				background-color: $bColor;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
 
 nav {
 	height: 100px;
@@ -79,11 +147,6 @@ nav {
 #contact-content {
 	max-width: 1000px;
 	margin: 50px auto;
-	h1 {
-		display: none;
-		color: $bColor;
-		margin: 50px auto;
-	}
 
 	label {
 		color: rgb(39, 39, 39);
@@ -145,43 +208,57 @@ footer {
 		max-width: 1000px;
 		margin: 0 auto;
 		padding: 50px 0;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 	}
-	li {
-		display: inline;
-		font-size: 16px;
-		margin: 0 5px;
-		a {
-			text-decoration: none;
-			color: #fff;
-			&:hover {
-				color: $light-yellow;
+	#link {
+		margin-bottom: 50px;
+		#link-box {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			padding: 0 20%;
+		}
+		.link {
+			a {
+				display: inline-block;
+				width: 100px;
+				text-align: center;
+				font-size: 16px;
 				text-decoration: none;
+				color: #fff;
+				&:hover {
+					color: $light-yellow;
+					text-decoration: none;
+				}
 			}
 		}
 	}
-	h3 {
-		font-size: 24px;
-		margin-bottom: 15px;
-	}
-	#sub {
-		display: grid;
-		grid-template-columns: 70% 20%;
-		grid-gap: 10px;
-		input {
-			border: 0;
-			padding: 5px;
-			border-radius: 5px;
-			font-size: 14px;
+
+	#sub-box {
+		width: 60%;
+		margin: 0 auto;
+		h3 {
+			font-size: 24px;
+			margin-bottom: 15px;
+			text-align: center;
 		}
-		button {
-			color: $yellow;
-			border: 0;
-			background-color: #fff;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 14px;
+		#sub {
+			display: grid;
+			grid-template-columns: 70% 30%;
+			grid-gap: 10px;
+			input {
+				border: 0;
+				padding: 5px;
+				border-radius: 5px;
+				font-size: 14px;
+			}
+			button {
+				color: $yellow;
+				border: 0;
+				background-color: #fff;
+				border-radius: 5px;
+				cursor: pointer;
+				padding: 5px;
+				font-size: 14px;
+			}
 		}
 	}
 	#copy {
@@ -191,62 +268,18 @@ footer {
 	}
 }
 
-#menu {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	display: none;
-	cursor: pointer;
-	img {
-		height: 30px;
-	}
-	&:active #menu-list {
-		right: 0;
-	}
-	&:hover #menu-list {
-		right: 0;
-	}
-	#menu-list {
-		// padding: 20px;
-		height: 100vh;
-		width: 300px;
-		background-color: $light-yellow;
-		position: fixed;
-		top: 0;
-		right: -300px;
-		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-		transition: 1s;
-		li {
-			list-style: none;
-			padding: 15px 15px;
-			a {
-				text-decoration: none;
-				color: rgb(39, 39, 39);
-			}
-		}
-		#menu-home {
-			background-color: $bColor;
-			a {
-				color: #fff;
-			}
-		}
-	}
-}
+
 
 // 手機
 @media screen and (max-width: 768px) {
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 	}
 	.carousel {
 		margin: 0 auto;
-	}
-	h1 {
-		display: block;
-		text-align: center;
 	}
 	#contact-content {
 		margin: 0 auto;
@@ -270,13 +303,30 @@ footer {
 
 	footer {
 		#footer-box {
-			display: block;
-			padding: 0 20px;
-			#link {
-				padding: 50px 0;
-				li {
-					display: block;
-					margin: 10px 0;
+				#link {
+					margin-bottom: 50px;
+					#link-box {
+						display: grid;
+						grid-template-columns: repeat(1, 1fr);
+						margin: 0 auto;
+						a {
+							text-align: center;
+						}
+					}
+					.link {
+						margin: 0 auto;
+						padding: 5px;
+					}
+				}
+		}
+		#sub-box {
+			h3 {
+				text-align: left;
+			}
+			#sub {
+				grid-template-columns: 1fr;
+				button {
+					width: 30%;
 				}
 			}
 		}
@@ -288,15 +338,11 @@ footer {
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 	}
 	.carousel {
 		margin: 0 auto;
-	}
-	h1 {
-		display: block;
-		text-align: center;
 	}
 	#contact-content {
 		margin: 0 auto;
@@ -320,13 +366,21 @@ footer {
 
 	footer {
 		#footer-box {
-			padding: 50px 180px;
-			#link {
-				li {
-					display: block;
-					padding: 5px;
+				#link {
+					margin-bottom: 50px;
+					#link-box {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						margin: 0 auto;
+						a {
+							text-align: center;
+						}
+					}
+					.link {
+						margin: 0 auto;
+						padding: 5px;
+					}
 				}
-			}
 		}
 	}
 }
@@ -335,10 +389,7 @@ footer {
 	nav {
 		display: block;
 	}
-	#menu {
-		display: none;
-	}
-	h1 {
+	#rwd-nav {
 		display: none;
 	}
 	#contact-content {
@@ -357,11 +408,17 @@ footer {
 	}
 	footer {
 		#footer-box {
-			padding: 50px 0;
 			#link {
-				li {
-					display: inline-block;
-					padding: 3px;
+				margin-bottom: 50px;
+				#link-box {
+					display: grid;
+					grid-template-columns: repeat(6, 1fr);
+					.link{
+						margin: 0;
+					}
+					a {
+						text-align: center;
+					}
 				}
 			}
 		}

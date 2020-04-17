@@ -12,11 +12,32 @@
     <!-- AOS CSS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my CSS -->
-    <link rel="stylesheet" href="./store.css">
+    <link rel="stylesheet" href="./store/store.css">
 
 </head>
 
 <body>
+    <nav id="rwd-nav">
+        <div id="rwd-logo">
+            <li>Yulita</li>
+            <li>Bakery</li>
+        </div>
+        <div id="rwd-title">門市據點</div>
+        <div id="menu">
+            <img src="./img/menu.png" alt="">
+            <div id="menu-list">
+                <li id="menu-home"><a href="index.html">首頁</a></li>
+                <li id="menu-story"><a href="story.html">品牌故事</a></li>
+                <li id="menu-new"><a href="new.html">最新消息</a></li>
+                <li id="menu-store"><a href="store.html">門市據點</a></li>
+                <li id="menu-contact"><a href="contact.html">聯絡我們</a></li>
+                <li id="menu-product"><a href="product.html">商品專區</a></li>
+                <li id="menu-login"><a href="login.html">會員登入</a></li>
+                <li id="menu-fb"><a href="#">Facebook</a></li>
+                <li id="menu-ig"><a href="#">Instagram</a></li>
+            </div>
+        </div>
+    </nav>
     <div id="bg">
         <nav>
             <ul>
@@ -69,7 +90,6 @@
     </a>
   </div>
 
-  <h1>門市據點</h1>
 
   <div id="store-content">
       <div class="store" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true" >
@@ -103,19 +123,19 @@
 
   
 
-<footer>
+  <footer>
     <div id="footer-box">
         <div id="link">
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="story.html">品牌故事</a</li>
-                <li><a href="new.html">最新消息</a></li>
-                <li><a href="store.html">門市據點</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-                <li><a href="product.html">商品專區</a></li>
-            </ul>
+            <div id="link-box">
+                <div class="link"><a href="index.html">首頁</a></div>
+                <div class="link"><a href="story.html">品牌故事</a></div>
+                <div class="link"><a href="new.html">最新消息</a></div>
+                <div class="link"><a href="store.html">門市據點</a></div>
+                <div class="link"><a href="contact.html">聯絡我們</a></div>
+                <div class="link"><a href="product.html">商品專區</a></div>
+            </div>
         </div>
-        <div>
+        <div id="sub-box">
             <h3>訂閱我們，可以搶先獲得最新資訊喔</h3>
             <div id="sub">
                 <input type="email" placeholder="請輸入您的email">
@@ -128,18 +148,6 @@
     </div>
 </footer>
 
-<div id="menu">
-    <img src="./img/menu.png" alt="">
-    <div id="menu-list">
-        <li id="menu-home"><a href="index.html">首頁</a></li>
-        <li><a href="story.html" id="menu-story">品牌故事</a></li>
-        <li><a href="new.html" id="menu-new">最新消息</a></li>
-        <li><a href="store.html" id="menu-store">門市據點</a></li>
-        <li><a href="contact.html" id="menu-contact">聯絡我們</a></li>
-        <li><a href="product.html" id="menu-product">商品專區</a></li>
-        <li><a href="login.html" id="menu-login">會員登入</a></li>
-    </div>
-</div>
 
 
     <!-- Bootstrap JS CDN -->

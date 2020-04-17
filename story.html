@@ -9,10 +9,31 @@
     <!-- AOS CSS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my CSS -->
-    <link rel="stylesheet" href="./story.css">
+    <link rel="stylesheet" href="./story/story.css">
 </head>
 
 <body>
+    <nav id="rwd-nav">
+        <div id="rwd-logo">
+            <li>Yulita</li>
+            <li>Bakery</li>
+        </div>
+        <div id="rwd-title">品牌故事</div>
+        <div id="menu">
+            <img src="./img/menu.png" alt="">
+            <div id="menu-list">
+                <li id="menu-home"><a href="index.html">首頁</a></li>
+                <li id="menu-story"><a href="story.html">品牌故事</a></li>
+                <li id="menu-new"><a href="new.html">最新消息</a></li>
+                <li id="menu-store"><a href="store.html">門市據點</a></li>
+                <li id="menu-contact"><a href="contact.html">聯絡我們</a></li>
+                <li id="menu-product"><a href="product.html">商品專區</a></li>
+                <li id="menu-login"><a href="login.html">會員登入</a></li>
+                <li id="menu-fb"><a href="#">Facebook</a></li>
+                <li id="menu-ig"><a href="#">Instagram</a></li>
+            </div>
+        </div>
+    </nav>
     <div id="bg">
         <nav>
             <ul>
@@ -36,13 +57,12 @@
             </ul>
         </nav>
     </div>
-    <h1>品牌故事</h1>
     <div id="story-content">
        
         <img src="./img/story1.jpeg" alt="story-picture" id="pic1" data-aos="fade-right" data-aos-delay="300"
-            data-aos-duration="1000">
+            data-aos-duration="1000" data-aos-once="true">
 
-        <div id="text1" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+        <div id="text1" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
             
             <p>
                 Yuki、Lina、Reta是三個到北部求學的南部女孩，三人一同在北部攻讀餐飲系，感情非常要好時常形影不離彼此，儘管意在他鄉，三人彼此能夠照應也不會感到孤獨。然而還是少了那份來自家鄉的草莓香，在家鄉三餐總是少不了草莓，來到北部頓時失去了這份”家香”，難免還是令人黯然神傷。
@@ -50,7 +70,7 @@
         </div>
 
 
-        <div id="text2" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+        <div id="text2" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
             <p>
                 女孩們決定將草莓家香帶到北部，來陪伴他們大學這四年。有天他們突發奇想，不如就利用他們的專業，將南部草莓與麵包結合，不但可以當做早餐來吃，還方便帶去學校分享給同學。
             </p>
@@ -58,24 +78,24 @@
                 隨著日子一天一天過去，女孩們獨自在宿舍嘗試各種草莓麵包，皆獲得了許多同學的好評，不只系上的同學搶著要購買，就連其他系的同學也一窩蜂的想要搶購，女孩們從來沒有想過，憑著他們純粹對家鄉的思念，也能夠帶領更多人認識南部草莓的美味。
             </p>
         </div>
-        <img src="./img/story2.jpeg" alt="story-picture" id="pic2" data-aos="fade-left" data-aos-delay="300"
-            data-aos-duration="1000">
+        <div id="pic2" data-aos="fade-left" data-aos-delay="300"
+        data-aos-duration="1000" data-aos-once="true"></div>
 
     </div>
 
     <footer>
         <div id="footer-box">
             <div id="link">
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="story.html">品牌故事</a></li>
-                    <li><a href="new.html">最新消息</a></li>
-                    <li><a href="store.html">門市據點</a></li>
-                    <li><a href="contact.html">聯絡我們</a></li>
-                    <li><a href="product.html">商品專區</a></li>
-                </ul>
+                <div id="link-box">
+                    <div class="link"><a href="index.html">首頁</a></div>
+                    <div class="link"><a href="story.html">品牌故事</a></div>
+                    <div class="link"><a href="new.html">最新消息</a></div>
+                    <div class="link"><a href="store.html">門市據點</a></div>
+                    <div class="link"><a href="contact.html">聯絡我們</a></div>
+                    <div class="link"><a href="product.html">商品專區</a></div>
+                </div>
             </div>
-            <div>
+            <div id="sub-box">
                 <h3>訂閱我們，可以搶先獲得最新資訊喔</h3>
                 <div id="sub">
                     <input type="email" placeholder="請輸入您的email">
@@ -87,19 +107,6 @@
             </div>
         </div>
     </footer>
-
-    <div id="menu">
-        <img src="./img/menu.png" alt="">
-        <div id="menu-list">
-            <li id="menu-home"><a href="index.html">首頁</a></li>
-            <li><a href="story.html" id="menu-story">品牌故事</a></li>
-            <li><a href="new.html" id="menu-new">最新消息</a></li>
-            <li><a href="store.html" id="menu-store">門市據點</a></li>
-            <li><a href="contact.html" id="menu-contact">聯絡我們</a></li>
-            <li><a href="product.html" id="menu-product">商品專區</a></li>
-            <li><a href="login.html" id="menu-login">會員登入</a></li>
-        </div>
-    </div>
 
     <!-- AOS JS CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

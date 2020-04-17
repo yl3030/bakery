@@ -12,9 +12,76 @@ $hMargin-top: 25px;
 	font-family: 微軟正黑體;
 	box-sizing: border-box;
 }
-
+#rwd-nav{
+	display: none;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	#rwd-logo {
+		border-right: 2px solid $sColor;
+		display: inline-block;
+		margin: 10px 10px 10px 30px ;
+		padding: 0 15px;
+		li{
+			color: $bColor;
+			list-style: none;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+	#rwd-title{
+		display: inline-block;
+		color: $bColor;
+		vertical-align: top;
+		margin-top: 17px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#menu {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+		img {
+			height: 30px;
+		}
+		&:active #menu-list {
+			right: 0;
+		}
+		&:hover #menu-list {
+			right: 0;
+		}
+		#menu-list {
+			height: 100vh;
+			width: 300px;
+			background-color: $light-yellow;
+			position: fixed;
+			top: 0;
+			right: -305px;
+			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+			transition: 1s;
+			li {
+				list-style: none;
+				padding: 15px 15px;
+				a {
+					text-decoration: none;
+					color: rgb(39, 39, 39);
+				}
+			}
+			#menu-home {
+				background-color: $bColor;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
 #bg {
-	background-image: url(./img/background.jpg);
+	background-image: url(../img/background.jpg);
 	height: 100vh;
 	// 背景填滿整個元素
 	background-size: cover;
@@ -75,48 +142,7 @@ nav {
 	}
 }
 
-#menu {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	display: none;
-	cursor: pointer;
-	img {
-		height: 30px;
-	}
-	&:active #menu-list {
-		right: 0;
-	}
-	&:hover #menu-list {
-		right: 0;
-	}
-	#menu-list {
-		// padding: 20px;
-		height: 100vh;
-		width: 300px;
-		background-color: $light-yellow;
-		position: fixed;
-		top: 0;
-		right: -300px;
-		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-		transition: 1s;
-		li {
-			list-style: none;
-			padding: 15px 15px;
-			a {
-				text-decoration: none;
-				color: rgb(39, 39, 39);
-			}
-		}
-		#menu-home{
-			background-color: $bColor;
 
-			a{
-				color:#fff;
-			}
-		}
-	}
-}
 
 section {
 	#title {
@@ -224,10 +250,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+	#bg{
+		background-image: url(../img/rwd-home.jpg);
+	}
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 		#menu-list {
 			width: 200px;
@@ -249,22 +278,20 @@ footer {
 			margin: 30px 0 0 50px;
 		}
 		#contact-btn {
-			left: 50px;
+			display: none;
 		}
 	}
 }
 
 @media screen and (min-width: 769px) {
+	#bg{
+		background-image: url(../img/rwd-home.jpg);
+	}
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
-		li {
-			a {
-				font-size: 24px;
-			}
-		}
 	}
 	section {
 		#title {
@@ -282,15 +309,18 @@ footer {
 			margin: 30px 0 0 50px;
 		}
 		#contact-btn {
-			left: 50px;
+			display: none;
 		}
 	}
 }
 @media screen and (min-width: 1025px) {
+	#bg{
+		background-image: url(../img/background.jpg);
+	}
 	nav {
 		display: block;
 	}
-	#menu {
+	#rwd-nav{
 		display: none;
 	}
 	section {
@@ -309,7 +339,7 @@ footer {
 			margin: 30px 0 0 $hMargin-left;
 		}
 		#contact-btn {
-			left: $hMargin-left;
+			display: block;
 		}
 	}
 }

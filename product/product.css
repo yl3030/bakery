@@ -7,6 +7,91 @@
           box-sizing: border-box;
 }
 
+#rwd-nav {
+  display: none;
+  height: 60px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#rwd-nav #rwd-logo {
+  border-right: 2px solid #a8dcdf;
+  display: inline-block;
+  margin: 10px 10px 10px 30px;
+  padding: 0 15px;
+}
+
+#rwd-nav #rwd-logo li {
+  color: #fe6162;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#rwd-nav #rwd-title {
+  display: inline-block;
+  color: #fe6162;
+  vertical-align: top;
+  margin-top: 17px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#rwd-nav #menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#rwd-nav #menu img {
+  height: 30px;
+}
+
+#rwd-nav #menu:active #menu-list {
+  right: 0;
+}
+
+#rwd-nav #menu:hover #menu-list {
+  right: 0;
+}
+
+#rwd-nav #menu #menu-list {
+  height: 100vh;
+  width: 300px;
+  background-color: #faf1d6;
+  position: fixed;
+  top: 0;
+  right: -305px;
+  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#rwd-nav #menu #menu-list li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+#rwd-nav #menu #menu-list li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#rwd-nav #menu #menu-list #menu-product {
+  background-color: #fe6162;
+}
+
+#rwd-nav #menu #menu-list #menu-product a {
+  color: #fff;
+}
+
 nav {
   height: 100px;
 }
@@ -28,7 +113,6 @@ nav ul #logo a {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Arial Black";
 }
 
 nav ul #content {
@@ -85,12 +169,6 @@ nav ul #nav-btn #car {
 
 #banner img {
   width: 100%;
-}
-
-h1 {
-  display: none;
-  color: #fe6162;
-  margin: 50px auto;
 }
 
 #product-content {
@@ -157,7 +235,7 @@ h1 {
 #product-content #wedding #pic1-1,
 #product-content #baby #pic1-1,
 #product-content #snack #pic1-1 {
-  background-image: url(./img/birthdaycake1.jpg);
+  background-image: url(../img/birthdaycake1.jpg);
 }
 
 #product-content #birthday #pic1-2,
@@ -165,7 +243,7 @@ h1 {
 #product-content #wedding #pic1-2,
 #product-content #baby #pic1-2,
 #product-content #snack #pic1-2 {
-  background-image: url(./img/birthdaycake2.jpg);
+  background-image: url(../img/birthdaycake2.jpg);
 }
 
 #product-content #birthday #pic1-3,
@@ -173,7 +251,7 @@ h1 {
 #product-content #wedding #pic1-3,
 #product-content #baby #pic1-3,
 #product-content #snack #pic1-3 {
-  background-image: url(./img/birthdaycake3.jpg);
+  background-image: url(../img/birthdaycake3.jpg);
 }
 
 #product-content #birthday #pic1-4,
@@ -181,7 +259,7 @@ h1 {
 #product-content #wedding #pic1-4,
 #product-content #baby #pic1-4,
 #product-content #snack #pic1-4 {
-  background-image: url(./img/birthdaycake4.jpg);
+  background-image: url(../img/birthdaycake4.jpg);
 }
 
 #product-content #birthday #pic2-1,
@@ -189,7 +267,7 @@ h1 {
 #product-content #wedding #pic2-1,
 #product-content #baby #pic2-1,
 #product-content #snack #pic2-1 {
-  background-image: url(./img/bread1.jpg);
+  background-image: url(../img/bread1.jpg);
 }
 
 #product-content #birthday #pic2-2,
@@ -197,7 +275,7 @@ h1 {
 #product-content #wedding #pic2-2,
 #product-content #baby #pic2-2,
 #product-content #snack #pic2-2 {
-  background-image: url(./img/bread2.jpg);
+  background-image: url(../img/bread2.jpg);
 }
 
 #product-content #birthday #pic2-3,
@@ -205,7 +283,7 @@ h1 {
 #product-content #wedding #pic2-3,
 #product-content #baby #pic2-3,
 #product-content #snack #pic2-3 {
-  background-image: url(./img/bread3.jpg);
+  background-image: url(../img/bread3.jpg);
 }
 
 #product-content #birthday #pic2-4,
@@ -213,7 +291,7 @@ h1 {
 #product-content #wedding #pic2-4,
 #product-content #baby #pic2-4,
 #product-content #snack #pic2-4 {
-  background-image: url(./img/bread4.jpg);
+  background-image: url(../img/bread4.jpg);
 }
 
 #product-content #birthday #pic3-1,
@@ -221,7 +299,7 @@ h1 {
 #product-content #wedding #pic3-1,
 #product-content #baby #pic3-1,
 #product-content #snack #pic3-1 {
-  background-image: url(./img/weddingcake1.jpg);
+  background-image: url(../img/weddingcake1.jpg);
 }
 
 #product-content #birthday #pic3-2,
@@ -229,7 +307,7 @@ h1 {
 #product-content #wedding #pic3-2,
 #product-content #baby #pic3-2,
 #product-content #snack #pic3-2 {
-  background-image: url(./img/weddingcake2.jpg);
+  background-image: url(../img/weddingcake2.jpg);
 }
 
 #product-content #birthday #pic3-3,
@@ -237,7 +315,7 @@ h1 {
 #product-content #wedding #pic3-3,
 #product-content #baby #pic3-3,
 #product-content #snack #pic3-3 {
-  background-image: url(./img/weddingcake3.jpg);
+  background-image: url(../img/weddingcake3.jpg);
 }
 
 #product-content #birthday #pic3-4,
@@ -245,7 +323,7 @@ h1 {
 #product-content #wedding #pic3-4,
 #product-content #baby #pic3-4,
 #product-content #snack #pic3-4 {
-  background-image: url(./img/weddingcake4.jpg);
+  background-image: url(../img/weddingcake4.jpg);
 }
 
 #product-content #birthday #pic4-1,
@@ -253,7 +331,7 @@ h1 {
 #product-content #wedding #pic4-1,
 #product-content #baby #pic4-1,
 #product-content #snack #pic4-1 {
-  background-image: url(./img/babycake1.jpg);
+  background-image: url(../img/babycake1.jpg);
 }
 
 #product-content #birthday #pic4-2,
@@ -261,7 +339,7 @@ h1 {
 #product-content #wedding #pic4-2,
 #product-content #baby #pic4-2,
 #product-content #snack #pic4-2 {
-  background-image: url(./img/babycake2.jpg);
+  background-image: url(../img/babycake2.jpg);
 }
 
 #product-content #birthday #pic4-3,
@@ -269,7 +347,7 @@ h1 {
 #product-content #wedding #pic4-3,
 #product-content #baby #pic4-3,
 #product-content #snack #pic4-3 {
-  background-image: url(./img/babycake3.jpg);
+  background-image: url(../img/babycake3.jpg);
 }
 
 #product-content #birthday #pic4-4,
@@ -277,7 +355,7 @@ h1 {
 #product-content #wedding #pic4-4,
 #product-content #baby #pic4-4,
 #product-content #snack #pic4-4 {
-  background-image: url(./img/babycake4.jpg);
+  background-image: url(../img/babycake4.jpg);
 }
 
 #product-content #birthday #pic5-1,
@@ -285,7 +363,7 @@ h1 {
 #product-content #wedding #pic5-1,
 #product-content #baby #pic5-1,
 #product-content #snack #pic5-1 {
-  background-image: url(./img/snack1.jpg);
+  background-image: url(../img/snack1.jpg);
 }
 
 #product-content #birthday #pic5-2,
@@ -293,7 +371,7 @@ h1 {
 #product-content #wedding #pic5-2,
 #product-content #baby #pic5-2,
 #product-content #snack #pic5-2 {
-  background-image: url(./img/snack2.jpg);
+  background-image: url(../img/snack2.jpg);
 }
 
 #product-content #birthday #pic5-3,
@@ -301,7 +379,7 @@ h1 {
 #product-content #wedding #pic5-3,
 #product-content #baby #pic5-3,
 #product-content #snack #pic5-3 {
-  background-image: url(./img/snack3.jpg);
+  background-image: url(../img/snack3.jpg);
 }
 
 #product-content #birthday #pic5-4,
@@ -309,7 +387,7 @@ h1 {
 #product-content #wedding #pic5-4,
 #product-content #baby #pic5-4,
 #product-content #snack #pic5-4 {
-  background-image: url(./img/snack4.jpg);
+  background-image: url(../img/snack4.jpg);
 }
 
 #product-content #birthday .img-box,
@@ -536,55 +614,66 @@ footer #footer-box {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+footer #link {
+  margin-bottom: 50px;
+}
+
+footer #link #link-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  padding: 0 20%;
 }
 
-footer li {
-  display: inline;
+footer #link .link a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
   font-size: 16px;
-  margin: 0 5px;
-}
-
-footer li a {
   text-decoration: none;
   color: #fff;
 }
 
-footer li a:hover {
+footer #link .link a:hover {
   color: #faf1d6;
   text-decoration: none;
 }
 
-footer h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+footer #sub-box {
+  width: 60%;
+  margin: 0 auto;
 }
 
-footer #sub {
+footer #sub-box h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+footer #sub-box #sub {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 20%;
-      grid-template-columns: 70% 20%;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
   grid-gap: 10px;
 }
 
-footer #sub input {
+footer #sub-box #sub input {
   border: 0;
   padding: 5px;
   border-radius: 5px;
-  font-size: 14px;
 }
 
-footer #sub button {
+footer #sub-box #sub button {
   color: #ffb938;
   border: 0;
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
+  padding: 5px;
 }
 
 footer #copy {
@@ -595,70 +684,15 @@ footer #copy {
   padding: 50px 0;
 }
 
-#menu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: none;
-  cursor: pointer;
-}
-
-#menu img {
-  height: 30px;
-}
-
-#menu:active #menu-list {
-  right: 0;
-}
-
-#menu:hover #menu-list {
-  right: 0;
-}
-
-#menu #menu-list {
-  height: 100vh;
-  width: 300px;
-  background-color: #faf1d6;
-  position: fixed;
-  top: 0;
-  right: -300px;
-  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#menu #menu-list li {
-  list-style: none;
-  padding: 15px 15px;
-}
-
-#menu #menu-list li a {
-  text-decoration: none;
-  color: #272727;
-}
-
-#menu #menu-list #menu-home {
-  background-color: #fe6162;
-}
-
-#menu #menu-list #menu-home a {
-  color: #fff;
-}
-
 @media screen and (max-width: 768px) {
   nav {
     display: none;
   }
-  #menu {
+  #rwd-nav {
     display: block;
   }
   .carousel {
     margin: 0 auto;
-  }
-  h1 {
-    display: block;
-    text-align: center;
   }
   #banner img {
     width: 100%;
@@ -722,16 +756,32 @@ footer #copy {
     margin: 50px 0;
     text-align: center;
   }
-  footer #footer-box {
-    display: block;
-    padding: 0 20px;
-  }
   footer #footer-box #link {
-    padding: 50px 0;
+    margin-bottom: 50px;
   }
-  footer #footer-box #link li {
-    display: block;
-    margin: 10px 0;
+  footer #footer-box #link #link-box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  footer #footer-box #link #link-box a {
+    text-align: center;
+  }
+  footer #footer-box #link .link {
+    margin: 0 auto;
+    padding: 5px;
+  }
+  footer #sub-box h3 {
+    text-align: left;
+  }
+  footer #sub-box #sub {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer #sub-box #sub button {
+    width: 30%;
   }
 }
 
@@ -739,15 +789,11 @@ footer #copy {
   nav {
     display: none;
   }
-  #menu {
+  #rwd-nav {
     display: block;
   }
   .carousel {
     margin: 0 auto;
-  }
-  h1 {
-    display: block;
-    text-align: center;
   }
   #banner img {
     width: 100%;
@@ -811,11 +857,21 @@ footer #copy {
     margin: 50px 0;
     text-align: center;
   }
-  footer #footer-box {
-    padding: 50px 180px;
+  footer #footer-box #link {
+    margin-bottom: 50px;
   }
-  footer #footer-box #link li {
-    display: block;
+  footer #footer-box #link #link-box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+  footer #footer-box #link #link-box a {
+    text-align: center;
+  }
+  footer #footer-box #link .link {
+    margin: 0 auto;
     padding: 5px;
   }
 }
@@ -824,10 +880,7 @@ footer #copy {
   nav {
     display: block;
   }
-  #menu {
-    display: none;
-  }
-  h1 {
+  #rwd-nav {
     display: none;
   }
   #banner img {
@@ -890,12 +943,20 @@ footer #copy {
     margin: 50px 0;
     text-align: right;
   }
-  footer #footer-box {
-    padding: 50px 0;
+  footer #footer-box #link {
+    margin-bottom: 50px;
   }
-  footer #footer-box #link li {
-    display: inline-block;
-    padding: 3px;
+  footer #footer-box #link #link-box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+  footer #footer-box #link #link-box .link {
+    margin: 0;
+  }
+  footer #footer-box #link #link-box a {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=product.css.map */

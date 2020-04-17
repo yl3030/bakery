@@ -7,8 +7,93 @@
           box-sizing: border-box;
 }
 
+#rwd-nav {
+  display: none;
+  height: 60px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#rwd-nav #rwd-logo {
+  border-right: 2px solid #a8dcdf;
+  display: inline-block;
+  margin: 10px 10px 10px 30px;
+  padding: 0 15px;
+}
+
+#rwd-nav #rwd-logo li {
+  color: #fe6162;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#rwd-nav #rwd-title {
+  display: inline-block;
+  color: #fe6162;
+  vertical-align: top;
+  margin-top: 17px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#rwd-nav #menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#rwd-nav #menu img {
+  height: 30px;
+}
+
+#rwd-nav #menu:active #menu-list {
+  right: 0;
+}
+
+#rwd-nav #menu:hover #menu-list {
+  right: 0;
+}
+
+#rwd-nav #menu #menu-list {
+  height: 100vh;
+  width: 300px;
+  background-color: #faf1d6;
+  position: fixed;
+  top: 0;
+  right: -305px;
+  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#rwd-nav #menu #menu-list li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+#rwd-nav #menu #menu-list li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#rwd-nav #menu #menu-list #menu-login {
+  background-color: #fe6162;
+}
+
+#rwd-nav #menu #menu-list #menu-login a {
+  color: #fff;
+}
+
 #bg {
-  background-image: url(./img/background.jpg);
+  background-image: url(../img/background.jpg);
   height: 100vh;
   background-size: cover;
 }
@@ -203,77 +288,30 @@ section #signup-content button:hover {
   background-color: #a8dcdf;
 }
 
-#menu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: none;
-  cursor: pointer;
-}
-
-#menu img {
-  height: 30px;
-}
-
-#menu:active #menu-list {
-  right: 0;
-}
-
-#menu:hover #menu-list {
-  right: 0;
-}
-
-#menu #menu-list {
-  height: 100vh;
-  width: 300px;
-  background-color: #faf1d6;
-  position: fixed;
-  top: 0;
-  right: -300px;
-  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#menu #menu-list li {
-  list-style: none;
-  padding: 15px 15px;
-}
-
-#menu #menu-list li a {
-  text-decoration: none;
-  color: #272727;
-}
-
-#menu #menu-list #menu-home {
-  background-color: #fe6162;
-}
-
-#menu #menu-list #menu-home a {
-  color: #fff;
-}
-
 @media screen and (max-width: 768px) {
+  #bg {
+    background-image: url(../img/rwd-home.jpg);
+  }
   nav {
     display: none;
   }
-  #menu {
+  #rwd-nav {
     display: block;
   }
-  section {
-    margin: 0 10%;
-  }
   section #choice {
-    width: 90%;
+    width: 350px;
     margin: 0 auto;
   }
   section .choice {
-    width: 40%;
+    width: 150px !important;
+  }
+  section #signin-content,
+  section #signup-content {
+    width: 90%;
   }
   section #signin-content .form-box,
   section #signup-content .form-box {
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
   }
   section #forget {
@@ -281,30 +319,34 @@ section #signup-content button:hover {
   }
   section .btn {
     margin: 0 auto;
-    width: 90%;
+    width: 300px;
     text-align: center;
   }
   section .btn button {
-    width: 90%;
+    width: 300px !important;
   }
 }
 
 @media screen and (min-width: 769px) {
+  #bg {
+    background-image: url(../img/rwd-home.jpg);
+  }
   nav {
     display: none;
   }
-  #menu {
+  #rwd-nav {
     display: block;
   }
-  section {
-    margin: 0 10%;
-  }
   section #choice {
-    width: 90%;
+    width: 550px;
     margin: 0 auto;
   }
   section .choice {
     width: 40%;
+  }
+  section #signin-content,
+  section #signup-content {
+    width: 90%;
   }
   section #signin-content .form-box,
   section #signup-content .form-box {
@@ -316,90 +358,50 @@ section #signup-content button:hover {
   }
   section .btn {
     margin: 0 auto;
-    width: 90%;
+    width: 300px;
     text-align: center;
   }
   section .btn button {
-    width: 90%;
+    width: 300px !important;
   }
 }
 
 @media screen and (min-width: 1025px) {
+  #bg {
+    background-image: url(../img/background.jpg.jpg);
+  }
   nav {
     display: block;
   }
-  #menu {
+  #rwd-nav {
     display: none;
   }
-  h1 {
-    display: none;
+  section #choice {
+    width: 550px;
+    margin: 0 auto;
   }
-  #banner img {
-    width: 100%;
+  section .choice {
+    width: 40%;
   }
-  #product-content #icon #icon-group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5] !important;
-        grid-template-columns: repeat(5, 1fr) !important;
-    margin: 0 10%;
+  section #signin-content,
+  section #signup-content {
+    width: 90%;
   }
-  #product-content #birthday .card-group,
-  #product-content #bread .card-group,
-  #product-content #wedding .card-group,
-  #product-content #baby .card-group,
-  #product-content #snack .card-group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+  section #signin-content .form-box,
+  section #signup-content .form-box {
+    width: 80%;
+    margin: 30px auto;
   }
-  #product-content #birthday .card-group .img-box,
-  #product-content #bread .card-group .img-box,
-  #product-content #wedding .card-group .img-box,
-  #product-content #baby .card-group .img-box,
-  #product-content #snack .card-group .img-box {
-    width: 220px;
-    height: 220px;
+  section #forget {
+    margin-left: 10%;
   }
-  #product-content #birthday .card,
-  #product-content #bread .card,
-  #product-content #wedding .card,
-  #product-content #baby .card,
-  #product-content #snack .card {
-    margin-bottom: 50px !important;
+  section .btn {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
   }
-  #product-content #birthday .card .img-box:hover .hover-color,
-  #product-content #bread .card .img-box:hover .hover-color,
-  #product-content #wedding .card .img-box:hover .hover-color,
-  #product-content #baby .card .img-box:hover .hover-color,
-  #product-content #snack .card .img-box:hover .hover-color {
-    display: block !important;
-  }
-  #product-content #birthday .card .img-box:hover .buy-btn,
-  #product-content #bread .card .img-box:hover .buy-btn,
-  #product-content #wedding .card .img-box:hover .buy-btn,
-  #product-content #baby .card .img-box:hover .buy-btn,
-  #product-content #snack .card .img-box:hover .buy-btn {
-    display: inline-block !important;
-  }
-  #product-content #birthday .buy-btn-rwd,
-  #product-content #bread .buy-btn-rwd,
-  #product-content #wedding .buy-btn-rwd,
-  #product-content #baby .buy-btn-rwd,
-  #product-content #snack .buy-btn-rwd {
-    display: none !important;
-  }
-  #check-box #sum {
-    margin: 50px 0;
-    text-align: right;
-  }
-  footer #footer-box {
-    padding: 50px 0;
-  }
-  footer #footer-box #link li {
-    display: inline-block;
-    padding: 3px;
+  section .btn button {
+    width: 500px;
   }
 }
 /*# sourceMappingURL=login.css.map */

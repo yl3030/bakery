@@ -12,9 +12,77 @@ $hMargin-top: 25px;
 	font-family: 微軟正黑體;
 	box-sizing: border-box;
 }
+#rwd-nav{
+	display: none;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	#rwd-logo {
+		border-right: 2px solid $sColor;
+		display: inline-block;
+		margin: 10px 10px 10px 30px ;
+		padding: 0 15px;
+		li{
+			color: $bColor;
+			list-style: none;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+	#rwd-title{
+		display: inline-block;
+		color: $bColor;
+		vertical-align: top;
+		margin-top: 17px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#menu {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+		img {
+			height: 30px;
+		}
+		&:active #menu-list {
+			right: 0;
+		}
+		&:hover #menu-list {
+			right: 0;
+		}
+		#menu-list {
+			height: 100vh;
+			width: 300px;
+			background-color: $light-yellow;
+			position: fixed;
+			top: 0;
+			right: -305px;
+			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+			transition: 1s;
+			li {
+				list-style: none;
+				padding: 15px 15px;
+				a {
+					text-decoration: none;
+					color: rgb(39, 39, 39);
+				}
+			}
+			#menu-login {
+				background-color: $bColor;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
 
 #bg {
-	background-image: url(./img/background.jpg);
+	background-image: url(../img/background.jpg);
 	height: 100vh;
 	// 背景填滿整個元素
 	background-size: cover;
@@ -97,7 +165,6 @@ section {
 	}
 
 	#signin-content {
-		// display: none;
 		margin-top: 80px;
 		.form-box {
 			width: 500px;
@@ -188,68 +255,30 @@ section {
 	}
 }
 
-#menu {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	display: none;
-	cursor: pointer;
-	img {
-		height: 30px;
-	}
-	&:active #menu-list {
-		right: 0;
-	}
-	&:hover #menu-list {
-		right: 0;
-	}
-	#menu-list {
-		// padding: 20px;
-		height: 100vh;
-		width: 300px;
-		background-color: $light-yellow;
-		position: fixed;
-		top: 0;
-		right: -300px;
-		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-		transition: 1s;
-		li {
-			list-style: none;
-			padding: 15px 15px;
-			a {
-				text-decoration: none;
-				color: rgb(39, 39, 39);
-			}
-		}
-		#menu-home {
-			background-color: $bColor;
-			a {
-				color: #fff;
-			}
-		}
-	}
-}
 // 手機
 @media screen and (max-width: 768px) {
+	#bg{
+		background-image: url(../img/rwd-home.jpg);
+	}
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 	}
 	section {
-		margin: 0 10%;
 		#choice{
-			width: 90%;
+			width: 350px;
 			margin: 0 auto;
 		}
 		.choice {
-			width: 40%;
+			width: 150px!important;
 		}
 		#signin-content,
 		#signup-content {
+			width: 90%;
 			.form-box {
-				width: 80%;
+				width: 90%;
 				margin: 30px auto;
 			}
 		}
@@ -258,10 +287,10 @@ section {
 		}
 		.btn{
 			margin: 0 auto;
-			width: 90%;
+			width: 300px;
 			text-align: center;
 			button{
-				width: 90%;
+				width: 300px!important;
 			}
 		}
 	}
@@ -269,16 +298,18 @@ section {
 
 // 平板
 @media screen and (min-width: 769px) {
+	#bg{
+		background-image: url(../img/rwd-home.jpg);
+	}
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 	}
 	section {
-		margin: 0 10%;
 		#choice{
-			width: 90%;
+			width: 550px;
 			margin: 0 auto;
 		}
 		.choice {
@@ -286,6 +317,7 @@ section {
 		}
 		#signin-content,
 		#signup-content {
+			width: 90%;
 			.form-box {
 				width: 80%;
 				margin: 30px auto;
@@ -296,83 +328,50 @@ section {
 		}
 		.btn{
 			margin: 0 auto;
-			width: 90%;
+			width: 300px;
 			text-align: center;
 			button{
-				width: 90%;
+				width: 300px!important;
 			}
 		}
 	}
 }
 
 @media screen and (min-width: 1025px) {
+	#bg{
+		background-image: url(../img/background.jpg.jpg);
+	}
 	nav {
 		display: block;
 	}
-	#menu {
+	#rwd-nav {
 		display: none;
 	}
-	h1 {
-		display: none;
-	}
-	#banner {
-		img {
-			width: 100%;
+	section {
+		#choice{
+			width: 550px;
+			margin: 0 auto;
 		}
-	}
-	#product-content {
-		#icon {
-			#icon-group {
-				display: grid;
-				grid-template-columns: repeat(5, 1fr) !important;
-				margin: 0 10%;
+		.choice {
+			width: 40%;
+		}
+		#signin-content,
+		#signup-content {
+			width: 90%;
+			.form-box {
+				width: 80%;
+				margin: 30px auto;
 			}
 		}
-		#birthday,
-		#bread,
-		#wedding,
-		#baby,
-		#snack {
-			.card-group {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				.img-box {
-					width: 220px;
-					height: 220px;
-				}
-			}
-			.card {
-				margin-bottom: 50px !important;
-				.img-box {
-					&:hover {
-						.hover-color {
-							display: block !important;
-						}
-						.buy-btn {
-							display: inline-block !important;
-						}
-					}
-				}
-			}
-			.buy-btn-rwd {
-				display: none !important;
-			}
+		#forget{
+			margin-left: 10%;
 		}
-	}
-	#check-box {
-		#sum {
-			margin: 50px 0;
-			text-align: right;
-		}
-	}
-	footer {
-		#footer-box {
-			padding: 50px 0;
-			#link {
-				li {
-					display: inline-block;
-					padding: 3px;
-				}
+		.btn{
+			margin: 0 auto;
+			width: 500px;
+			text-align: center;
+			button{
+				width: 500px;
 			}
 		}
 	}

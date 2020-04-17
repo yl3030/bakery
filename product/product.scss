@@ -13,6 +13,75 @@ $hMargin-top: 25px;
 	box-sizing: border-box;
 }
 
+#rwd-nav{
+	display: none;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	#rwd-logo {
+		border-right: 2px solid $sColor;
+		display: inline-block;
+		margin: 10px 10px 10px 30px ;
+		padding: 0 15px;
+		li{
+			color: $bColor;
+			list-style: none;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+	#rwd-title{
+		display: inline-block;
+		color: $bColor;
+		vertical-align: top;
+		margin-top: 17px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#menu {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+		img {
+			height: 30px;
+		}
+		&:active #menu-list {
+			right: 0;
+		}
+		&:hover #menu-list {
+			right: 0;
+		}
+		#menu-list {
+			height: 100vh;
+			width: 300px;
+			background-color: $light-yellow;
+			position: fixed;
+			top: 0;
+			right: -305px;
+			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+			transition: 1s;
+			li {
+				list-style: none;
+				padding: 15px 15px;
+				a {
+					text-decoration: none;
+					color: rgb(39, 39, 39);
+				}
+			}
+			#menu-product {
+				background-color: $bColor;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
 nav {
 	height: 100px;
 	ul {
@@ -30,7 +99,6 @@ nav {
 				text-decoration: none;
 				font-size: 20px;
 				font-weight: bold;
-				font-family: "Arial Black";
 			}
 		}
 		#content {
@@ -84,11 +152,6 @@ nav {
 	}
 }
 
-h1 {
-	display: none;
-	color: $bColor;
-	margin: 50px auto;
-}
 
 #product-content {
 	margin: 50px auto;
@@ -138,64 +201,64 @@ h1 {
 			align-items: center;
 		}
 		#pic1-1 {
-			background-image: url(./img/birthdaycake1.jpg);
+			background-image: url(../img/birthdaycake1.jpg);
 		}
 		#pic1-2 {
-			background-image: url(./img/birthdaycake2.jpg);
+			background-image: url(../img/birthdaycake2.jpg);
 		}
 		#pic1-3 {
-			background-image: url(./img/birthdaycake3.jpg);
+			background-image: url(../img/birthdaycake3.jpg);
 		}
 		#pic1-4 {
-			background-image: url(./img/birthdaycake4.jpg);
+			background-image: url(../img/birthdaycake4.jpg);
 		}
 		#pic2-1 {
-			background-image: url(./img/bread1.jpg);
+			background-image: url(../img/bread1.jpg);
 		}
 		#pic2-2 {
-			background-image: url(./img/bread2.jpg);
+			background-image: url(../img/bread2.jpg);
 		}
 		#pic2-3 {
-			background-image: url(./img/bread3.jpg);
+			background-image: url(../img/bread3.jpg);
 		}
 		#pic2-4 {
-			background-image: url(./img/bread4.jpg);
+			background-image: url(../img/bread4.jpg);
 		}
 		#pic3-1 {
-			background-image: url(./img/weddingcake1.jpg);
+			background-image: url(../img/weddingcake1.jpg);
 		}
 		#pic3-2 {
-			background-image: url(./img/weddingcake2.jpg);
+			background-image: url(../img/weddingcake2.jpg);
 		}
 		#pic3-3 {
-			background-image: url(./img/weddingcake3.jpg);
+			background-image: url(../img/weddingcake3.jpg);
 		}
 		#pic3-4 {
-			background-image: url(./img/weddingcake4.jpg);
+			background-image: url(../img/weddingcake4.jpg);
 		}
 		#pic4-1 {
-			background-image: url(./img/babycake1.jpg);
+			background-image: url(../img/babycake1.jpg);
 		}
 		#pic4-2 {
-			background-image: url(./img/babycake2.jpg);
+			background-image: url(../img/babycake2.jpg);
 		}
 		#pic4-3 {
-			background-image: url(./img/babycake3.jpg);
+			background-image: url(../img/babycake3.jpg);
 		}
 		#pic4-4 {
-			background-image: url(./img/babycake4.jpg);
+			background-image: url(../img/babycake4.jpg);
 		}
 		#pic5-1 {
-			background-image: url(./img/snack1.jpg);
+			background-image: url(../img/snack1.jpg);
 		}
 		#pic5-2 {
-			background-image: url(./img/snack2.jpg);
+			background-image: url(../img/snack2.jpg);
 		}
 		#pic5-3 {
-			background-image: url(./img/snack3.jpg);
+			background-image: url(../img/snack3.jpg);
 		}
 		#pic5-4 {
-			background-image: url(./img/snack4.jpg);
+			background-image: url(../img/snack4.jpg);
 		}
 		.img-box {
 			height: 220px;
@@ -353,43 +416,55 @@ footer {
 		max-width: 1000px;
 		margin: 0 auto;
 		padding: 50px 0;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 	}
-	li {
-		display: inline;
-		font-size: 16px;
-		margin: 0 5px;
-		a {
-			text-decoration: none;
-			color: #fff;
-			&:hover {
-				color: $light-yellow;
+	#link {
+		margin-bottom: 50px;
+		#link-box {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			padding: 0 20%;
+		}
+		.link {
+			a {
+				display: inline-block;
+				width: 100px;
+				text-align: center;
+				font-size: 16px;
 				text-decoration: none;
+				color: #fff;
+				&:hover {
+					color: $light-yellow;
+					text-decoration: none;
+				}
 			}
 		}
 	}
-	h3 {
-		font-size: 24px;
-		margin-bottom: 15px;
-	}
-	#sub {
-		display: grid;
-		grid-template-columns: 70% 20%;
-		grid-gap: 10px;
-		input {
-			border: 0;
-			padding: 5px;
-			border-radius: 5px;
-			font-size: 14px;
+
+	#sub-box {
+		width: 60%;
+		margin: 0 auto;
+		h3 {
+			font-size: 24px;
+			margin-bottom: 15px;
+			text-align: center;
 		}
-		button {
-			color: $yellow;
-			border: 0;
-			background-color: #fff;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 14px;
+		#sub {
+			display: grid;
+			grid-template-columns: 70% 30%;
+			grid-gap: 10px;
+			input {
+				border: 0;
+				padding: 5px;
+				border-radius: 5px;
+			}
+			button {
+				color: $yellow;
+				border: 0;
+				background-color: #fff;
+				border-radius: 5px;
+				cursor: pointer;
+				padding: 5px;
+			}
 		}
 	}
 	#copy {
@@ -399,62 +474,18 @@ footer {
 	}
 }
 
-#menu {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	display: none;
-	cursor: pointer;
-	img {
-		height: 30px;
-	}
-	&:active #menu-list {
-		right: 0;
-	}
-	&:hover #menu-list {
-		right: 0;
-	}
-	#menu-list {
-		// padding: 20px;
-		height: 100vh;
-		width: 300px;
-		background-color: $light-yellow;
-		position: fixed;
-		top: 0;
-		right: -300px;
-		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-		transition: 1s;
-		li {
-			list-style: none;
-			padding: 15px 15px;
-			a {
-				text-decoration: none;
-				color: rgb(39, 39, 39);
-			}
-		}
-		#menu-home {
-			background-color: $bColor;
-			a {
-				color: #fff;
-			}
-		}
-	}
-}
+
 
 // 手機
 @media screen and (max-width: 768px) {
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 	}
 	.carousel {
 		margin: 0 auto;
-	}
-	h1 {
-		display: block;
-		text-align: center;
 	}
 	#banner {
 		img {
@@ -507,13 +538,30 @@ footer {
 
 	footer {
 		#footer-box {
-			display: block;
-			padding: 0 20px;
-			#link {
-				padding: 50px 0;
-				li {
-					display: block;
-					margin: 10px 0;
+				#link {
+					margin-bottom: 50px;
+					#link-box {
+						display: grid;
+						grid-template-columns: repeat(1, 1fr);
+						margin: 0 auto;
+						a {
+							text-align: center;
+						}
+					}
+					.link {
+						margin: 0 auto;
+						padding: 5px;
+					}
+				}
+		}
+		#sub-box {
+			h3 {
+				text-align: left;
+			}
+			#sub {
+				grid-template-columns: 1fr;
+				button {
+					width: 30%;
 				}
 			}
 		}
@@ -525,15 +573,11 @@ footer {
 	nav {
 		display: none;
 	}
-	#menu {
+	#rwd-nav {
 		display: block;
 	}
 	.carousel {
 		margin: 0 auto;
-	}
-	h1 {
-		display: block;
-		text-align: center;
 	}
 	#banner {
 		img {
@@ -586,13 +630,21 @@ footer {
 
 	footer {
 		#footer-box {
-			padding: 50px 180px;
-			#link {
-				li {
-					display: block;
-					padding: 5px;
+				#link {
+					margin-bottom: 50px;
+					#link-box {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						margin: 0 auto;
+						a {
+							text-align: center;
+						}
+					}
+					.link {
+						margin: 0 auto;
+						padding: 5px;
+					}
 				}
-			}
 		}
 	}
 }
@@ -601,10 +653,7 @@ footer {
 	nav {
 		display: block;
 	}
-	#menu {
-		display: none;
-	}
-	h1 {
+	#rwd-nav {
 		display: none;
 	}
 	#banner {
@@ -659,11 +708,17 @@ footer {
 	}
 	footer {
 		#footer-box {
-			padding: 50px 0;
 			#link {
-				li {
-					display: inline-block;
-					padding: 3px;
+				margin-bottom: 50px;
+				#link-box {
+					display: grid;
+					grid-template-columns: repeat(6, 1fr);
+					.link{
+						margin: 0;
+					}
+					a {
+						text-align: center;
+					}
 				}
 			}
 		}

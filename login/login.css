@@ -191,10 +191,9 @@ section #signin-content .form-box {
   width: 500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
   margin: 30px 0;
-  height: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -204,6 +203,7 @@ section #signin-content .form-box {
 section #signin-content label {
   font-size: 18px;
   color: #fe6162;
+  padding: 0 15px;
 }
 
 section #signin-content #account,
@@ -250,10 +250,9 @@ section #signup-content .form-box {
   -ms-grid-columns: 30% 70%;
       grid-template-columns: 30% 70%;
   margin: 30px 0;
-  height: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   padding: 0 15px;
 }
 
@@ -298,24 +297,33 @@ section #signup-content button:hover {
   #rwd-nav {
     display: block;
   }
+  section {
+    margin: 0;
+  }
   section #choice {
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
   }
   section .choice {
-    width: 150px !important;
-  }
-  section #signin-content,
-  section #signup-content {
-    width: 90%;
+    width: 140px !important;
   }
   section #signin-content .form-box,
   section #signup-content .form-box {
     width: 90%;
     margin: 30px auto;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  section #signin-content .form-box input,
+  section #signup-content .form-box input {
+    margin: 5px 0;
+  }
+  section #signin-content .form-box label,
+  section #signup-content .form-box label {
+    padding: 5px 0;
   }
   section #forget {
-    margin-left: 10%;
+    margin-left: 20%;
   }
   section .btn {
     margin: 0 auto;
@@ -337,24 +345,27 @@ section #signup-content button:hover {
   #rwd-nav {
     display: block;
   }
+  section {
+    margin: 0;
+  }
   section #choice {
-    width: 550px;
+    width: 400px;
     margin: 0 auto;
   }
   section .choice {
-    width: 40%;
-  }
-  section #signin-content,
-  section #signup-content {
-    width: 90%;
+    width: 190px !important;
   }
   section #signin-content .form-box,
   section #signup-content .form-box {
-    width: 80%;
+    width: 65%;
     margin: 30px auto;
   }
+  section #signin-content {
+    -ms-grid-columns: 15% 85%;
+        grid-template-columns: 15% 85%;
+  }
   section #forget {
-    margin-left: 10%;
+    margin-left: 20%;
   }
   section .btn {
     margin: 0 auto;
@@ -368,7 +379,7 @@ section #signup-content button:hover {
 
 @media screen and (min-width: 1025px) {
   #bg {
-    background-image: url(../img/background.jpg.jpg);
+    background-image: url(../img/background.jpg);
   }
   nav {
     display: block;
@@ -376,32 +387,37 @@ section #signup-content button:hover {
   #rwd-nav {
     display: none;
   }
+  section {
+    margin: 0;
+  }
   section #choice {
     width: 550px;
-    margin: 0 auto;
+    margin-left: 100px;
   }
   section .choice {
-    width: 40%;
-  }
-  section #signin-content,
-  section #signup-content {
-    width: 90%;
+    width: 250px !important;
   }
   section #signin-content .form-box,
   section #signup-content .form-box {
-    width: 80%;
-    margin: 30px auto;
+    width: 500px;
+    margin: 30px 0;
+    margin-left: 100px;
+  }
+  section #signin-content {
+    -ms-grid-columns: 15% 85%;
+        grid-template-columns: 15% 85%;
   }
   section #forget {
-    margin-left: 10%;
+    margin-left: 100px;
   }
   section .btn {
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 100px;
     width: 500px;
     text-align: center;
   }
   section .btn button {
-    width: 500px;
+    width: 500px !important;
   }
 }
 /*# sourceMappingURL=login.css.map */

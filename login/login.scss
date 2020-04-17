@@ -169,15 +169,16 @@ section {
 		.form-box {
 			width: 500px;
 			display: grid;
-			grid-template-columns: 30% 70%;
+			grid-template-columns: 15% 85%;
 			margin: 30px 0;
-			height: 30px;
+			// height: 30px;
 			align-items: center;
 			padding: 0 15px;
 		}
 		label {
 			font-size: 18px;
 			color: $bColor;
+			padding: 0 15px;
 		}
 
 		#account,
@@ -219,8 +220,8 @@ section {
 			display: grid;
 			grid-template-columns: 30% 70%;
 			margin: 30px 0;
-			height: 30px;
-			align-items: center;
+			// height: 30xpx;
+			align-items: left;
 			padding: 0 15px;
 		}
 		label {
@@ -267,23 +268,30 @@ section {
 		display: block;
 	}
 	section {
+		margin: 0;
 		#choice{
-			width: 350px;
+			width: 300px;
 			margin: 0 auto;
 		}
 		.choice {
-			width: 150px!important;
+			width: 140px!important;
 		}
 		#signin-content,
 		#signup-content {
-			width: 90%;
 			.form-box {
 				width: 90%;
 				margin: 30px auto;
+				grid-template-columns: repeat(1,1fr);
+				input{
+					margin: 5px 0;
+				}
+				label{
+					padding: 5px 0;
+				}
 			}
 		}
 		#forget{
-			margin-left: 10%;
+			margin-left: 20%;
 		}
 		.btn{
 			margin: 0 auto;
@@ -308,23 +316,26 @@ section {
 		display: block;
 	}
 	section {
+		margin: 0;
 		#choice{
-			width: 550px;
+			width: 400px;
 			margin: 0 auto;
 		}
 		.choice {
-			width: 40%;
+			width: 190px!important;
 		}
 		#signin-content,
 		#signup-content {
-			width: 90%;
 			.form-box {
-				width: 80%;
+				width: 65%;
 				margin: 30px auto;
 			}
 		}
+		#signin-content{
+			grid-template-columns: 15% 85%;
+		}
 		#forget{
-			margin-left: 10%;
+			margin-left: 20%;
 		}
 		.btn{
 			margin: 0 auto;
@@ -339,7 +350,7 @@ section {
 
 @media screen and (min-width: 1025px) {
 	#bg{
-		background-image: url(../img/background.jpg.jpg);
+		background-image: url(../img/background.jpg);
 	}
 	nav {
 		display: block;
@@ -348,30 +359,37 @@ section {
 		display: none;
 	}
 	section {
+		margin: 0;
 		#choice{
 			width: 550px;
-			margin: 0 auto;
+			margin-left:$hMargin-left;
+
 		}
+		
 		.choice {
-			width: 40%;
+			width: 250px!important;
 		}
 		#signin-content,
 		#signup-content {
-			width: 90%;
 			.form-box {
-				width: 80%;
-				margin: 30px auto;
+				width: 500px;
+				margin: 30px 0;
+				margin-left: $hMargin-left;
 			}
 		}
+		#signin-content{
+			grid-template-columns: 15% 85%;
+		}
 		#forget{
-			margin-left: 10%;
+			margin-left:$hMargin-left;
 		}
 		.btn{
-			margin: 0 auto;
+			margin: 0;
+			margin-left: $hMargin-left;
 			width: 500px;
 			text-align: center;
 			button{
-				width: 500px;
+				width: 500px!important;
 			}
 		}
 	}

@@ -77,11 +77,17 @@ nav {
 }
 
 #banner {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 50px auto;
 	img {
-		height: 400px;
+		width: 100%;
 	}
+}
+
+h1 {
+	display: none;
+	color: $bColor;
+	margin: 50px auto;
 }
 
 #product-content {
@@ -92,8 +98,8 @@ nav {
 		color: $bColor;
 		// background-color: #ffb938;
 	}
-	h2::before{
-		content:'';
+	h2::before {
+		content: "";
 		width: 50px;
 		height: 3px;
 		background-color: $yellow;
@@ -106,7 +112,7 @@ nav {
 		font-weight: normal;
 		margin-bottom: 3px;
 	}
-	p{
+	p {
 		color: rgb(39, 39, 39);
 		font-weight: 900;
 	}
@@ -128,105 +134,118 @@ nav {
 	#wedding,
 	#baby,
 	#snack {
-		.card{
+		.card {
 			align-items: center;
 		}
-		#pic1-1{
-			background-image: url(./img/birthdaycake1.jpg);			
+		#pic1-1 {
+			background-image: url(./img/birthdaycake1.jpg);
 		}
-		#pic1-2{
+		#pic1-2 {
 			background-image: url(./img/birthdaycake2.jpg);
 		}
-		#pic1-3{
+		#pic1-3 {
 			background-image: url(./img/birthdaycake3.jpg);
 		}
-		#pic1-4{
+		#pic1-4 {
 			background-image: url(./img/birthdaycake4.jpg);
 		}
-		#pic2-1{
+		#pic2-1 {
 			background-image: url(./img/bread1.jpg);
 		}
-		#pic2-2{
+		#pic2-2 {
 			background-image: url(./img/bread2.jpg);
 		}
-		#pic2-3{
+		#pic2-3 {
 			background-image: url(./img/bread3.jpg);
 		}
-		#pic2-4{
+		#pic2-4 {
 			background-image: url(./img/bread4.jpg);
 		}
-		#pic3-1{
+		#pic3-1 {
 			background-image: url(./img/weddingcake1.jpg);
 		}
-		#pic3-2{
+		#pic3-2 {
 			background-image: url(./img/weddingcake2.jpg);
 		}
-		#pic3-3{
+		#pic3-3 {
 			background-image: url(./img/weddingcake3.jpg);
 		}
-		#pic3-4{
+		#pic3-4 {
 			background-image: url(./img/weddingcake4.jpg);
 		}
-		#pic4-1{
+		#pic4-1 {
 			background-image: url(./img/babycake1.jpg);
 		}
-		#pic4-2{
+		#pic4-2 {
 			background-image: url(./img/babycake2.jpg);
 		}
-		#pic4-3{
+		#pic4-3 {
 			background-image: url(./img/babycake3.jpg);
 		}
-		#pic4-4{
+		#pic4-4 {
 			background-image: url(./img/babycake4.jpg);
 		}
-		#pic5-1{
+		#pic5-1 {
 			background-image: url(./img/snack1.jpg);
 		}
-		#pic5-2{
+		#pic5-2 {
 			background-image: url(./img/snack2.jpg);
 		}
-		#pic5-3{
+		#pic5-3 {
 			background-image: url(./img/snack3.jpg);
 		}
-		#pic5-4{
+		#pic5-4 {
 			background-image: url(./img/snack4.jpg);
 		}
-		.img-box{
+		.img-box {
 			height: 220px;
 			width: 220px;
 			background-size: contain;
-			.hover-color{
+			.hover-color {
 				width: 220px;
 				height: 220px;
-				background-color:rgba(0,0,0,0.5);
+				background-color: rgba(0, 0, 0, 0.5);
 				display: none;
-				}
-				.buy-btn {
-					background-color: #fff;
-					border: 0;
-					color: $fColor;
-					padding: 8px 30px;
-					display: none;
-					border-radius: 5px;
-					margin: 150px 40px;
-					cursor: pointer;
-					&:hover {
-						background-color: $yellow;
-						color: #fff;
-						transition: 0.3s;
-					}
 			}
-			&:hover{
-				.hover-color{
+			.buy-btn {
+				background-color: #fff;
+				border: 0;
+				color: $fColor;
+				padding: 8px 30px;
+				display: none;
+				border-radius: 5px;
+				margin: 150px 40px;
+				cursor: pointer;
+				&:hover {
+					background-color: $yellow;
+					color: #fff;
+					transition: 0.3s;
+				}
+			}
+
+			&:hover {
+				.hover-color {
 					display: block;
 				}
-				.buy-btn{
+				.buy-btn {
 					display: inline-block;
 				}
 			}
 		}
-		
-			
+		.card-body {
+			p {
+				margin-bottom: 0;
+			}
+		}
+		.buy-btn-rwd {
+			background-color: $yellow;
+			color: #fff;
+			border: 0;
+			padding: 8px 30px;
+			display: none;
+			border-radius: 5px;
+			margin: 0 40px;
+		}
 	}
 }
 
@@ -235,7 +254,7 @@ nav {
 	padding: 20px 0;
 	margin-top: 30px;
 	#check {
-		width: 1000px;
+		max-width: 1000px;
 		margin: 0 auto 100px;
 		h1 {
 			color: $bColor;
@@ -327,54 +346,326 @@ nav {
 	}
 }
 
-footer{
-background-color: $yellow;
-color: #fff;
-	#footer-box{
+footer {
+	background-color: $yellow;
+	color: #fff;
+	#footer-box {
 		max-width: 1000px;
 		margin: 0 auto;
 		padding: 50px 0;
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
-	li{
+	li {
 		display: inline;
 		font-size: 16px;
 		margin: 0 5px;
-		a{
+		a {
 			text-decoration: none;
 			color: #fff;
-			&:hover{
+			&:hover {
 				color: $light-yellow;
 				text-decoration: none;
 			}
 		}
 	}
-	h3{
+	h3 {
 		font-size: 24px;
 		margin-bottom: 15px;
 	}
-	#sub{
+	#sub {
 		display: grid;
 		grid-template-columns: 70% 20%;
 		grid-gap: 10px;
-		input{
+		input {
 			border: 0;
 			padding: 5px;
 			border-radius: 5px;
+			font-size: 14px;
 		}
-		button{
+		button {
 			color: $yellow;
 			border: 0;
 			background-color: #fff;
 			border-radius: 5px;
 			cursor: pointer;
+			font-size: 14px;
 		}
 	}
-	#copy{
+	#copy {
 		text-align: center;
 		grid-column: 1/3;
-		margin: 50px 0;
+		padding: 50px 0;
 	}
-	
+}
+
+#menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display: none;
+	cursor: pointer;
+	img {
+		height: 30px;
+	}
+	&:active #menu-list {
+		right: 0;
+	}
+	&:hover #menu-list {
+		right: 0;
+	}
+	#menu-list {
+		// padding: 20px;
+		height: 100vh;
+		width: 300px;
+		background-color: $light-yellow;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+		transition: 1s;
+		li {
+			list-style: none;
+			padding: 15px 15px;
+			a {
+				text-decoration: none;
+				color: rgb(39, 39, 39);
+			}
+		}
+		#menu-home {
+			background-color: $bColor;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+// 手機
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+	}
+	#menu {
+		display: block;
+	}
+	.carousel {
+		margin: 0 auto;
+	}
+	h1 {
+		display: block;
+		text-align: center;
+	}
+	#banner {
+		img {
+			width: 100%;
+		}
+	}
+	#product-content {
+		#icon {
+			#icon-group {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr) !important;
+				margin: 0 10%;
+			}
+		}
+		#birthday,
+		#bread,
+		#wedding,
+		#baby,
+		#snack {
+			.card-group {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				.img-box {
+					width: 150px;
+					height: 150px;
+				}
+			}
+			.card {
+				margin-bottom: 50px !important;
+				.hover-color {
+					display: none !important;
+				}
+				.buy-btn {
+					display: none !important;
+				}
+			}
+			.buy-btn-rwd {
+				display: block !important;
+				font-size: 12px;
+				padding: 8px 15px;
+			}
+		}
+	}
+	#check-box {
+		#sum {
+			margin: 50px 0;
+			text-align: center;
+		}
+	}
+
+	footer {
+		#footer-box {
+			display: block;
+			padding: 0 20px;
+			#link {
+				padding: 50px 0;
+				li {
+					display: block;
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+// 平板
+@media screen and (min-width: 769px) {
+	nav {
+		display: none;
+	}
+	#menu {
+		display: block;
+	}
+	.carousel {
+		margin: 0 auto;
+	}
+	h1 {
+		display: block;
+		text-align: center;
+	}
+	#banner {
+		img {
+			width: 100%;
+		}
+	}
+	#product-content {
+		#icon {
+			#icon-group {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr) !important;
+				margin: 0 10%;
+			}
+		}
+		#birthday,
+		#bread,
+		#wedding,
+		#baby,
+		#snack {
+			.card-group {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				.img-box {
+					width: 200px;
+					height: 200px;
+				}
+			}
+			.card {
+				margin-bottom: 50px !important;
+				.hover-color {
+					display: none !important;
+				}
+				.buy-btn {
+					display: none !important;
+				}
+			}
+			.buy-btn-rwd {
+				display: block !important;
+				font-size: 16px;
+				padding: 8px 15px;
+			}
+		}
+	}
+	#check-box {
+		#sum {
+			margin: 50px 0;
+			text-align: center;
+		}
+	}
+
+	footer {
+		#footer-box {
+			padding: 50px 180px;
+			#link {
+				li {
+					display: block;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	nav {
+		display: block;
+	}
+	#menu {
+		display: none;
+	}
+	h1 {
+		display: none;
+	}
+	#banner {
+		img {
+			width: 100%;
+		}
+	}
+	#product-content {
+		#icon {
+			#icon-group {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr) !important;
+				margin: 0 10%;
+			}
+		}
+		#birthday,
+		#bread,
+		#wedding,
+		#baby,
+		#snack {
+			.card-group {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				.img-box {
+					width: 220px;
+					height: 220px;
+				}
+			}
+			.card {
+				margin-bottom: 50px !important;
+				.img-box {
+					&:hover {
+						.hover-color {
+							display: block !important;
+						}
+						.buy-btn {
+							display: inline-block !important;
+						}
+					}
+				}
+			}
+			.buy-btn-rwd {
+				display: none !important;
+			}
+		}
+	}
+	#check-box {
+		#sum {
+			margin: 50px 0;
+			text-align: right;
+		}
+	}
+	footer {
+		#footer-box {
+			padding: 50px 0;
+			#link {
+				li {
+					display: inline-block;
+					padding: 3px;
+				}
+			}
+		}
+	}
 }

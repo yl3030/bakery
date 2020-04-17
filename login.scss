@@ -1,6 +1,8 @@
 $sColor: #a8dcdf;
 $bColor: #fe6162;
 $fColor: #565656;
+$yellow: #ffb938;
+$light-yellow: #faf1d6;
 $hMargin-left: 100px;
 $hMargin-top: 25px;
 
@@ -83,21 +85,19 @@ section {
 			font-size: 18px;
 			text-align: center;
 			width: 250px;
-        }
-        #signin {
-            background-color: $sColor;
-            color: #fff;
-            cursor: pointer;
-        }
-        #signup{
-            cursor: pointer;
-        }
+		}
+		#signin {
+			background-color: $sColor;
+			color: #fff;
+			cursor: pointer;
+		}
+		#signup {
+			cursor: pointer;
+		}
 	}
 
-	
-
 	#signin-content {
-        // display: none;
+		// display: none;
 		margin-top: 80px;
 		.form-box {
 			width: 500px;
@@ -109,7 +109,6 @@ section {
 			padding: 0 15px;
 		}
 		label {
-			text-align: center;
 			font-size: 18px;
 			color: $bColor;
 		}
@@ -123,20 +122,19 @@ section {
 			height: 40px;
 		}
 
-
-			button {
-				padding: 10px 25px;
-				margin-top: 50px;
-				background-color: $bColor;
-				border-radius: 30px;
-				color: #fff;
-				border: 0;
-				font-size: 14px;
-				width: 500px;
-				&:hover {
-					background-color: $sColor;
-				}
-            }
+		button {
+			padding: 10px 25px;
+			margin-top: 50px;
+			background-color: $bColor;
+			border-radius: 30px;
+			color: #fff;
+			border: 0;
+			font-size: 14px;
+			width: 500px;
+			&:hover {
+				background-color: $sColor;
+			}
+		}
 
 		#forget {
 			font-size: 14px;
@@ -148,8 +146,8 @@ section {
 	}
 
 	#signup-content {
-        display: none;
-        .form-box {
+		display: none;
+		.form-box {
 			width: 500px;
 			display: grid;
 			grid-template-columns: 30% 70%;
@@ -157,32 +155,225 @@ section {
 			height: 30px;
 			align-items: center;
 			padding: 0 15px;
-        }
-        label {
+		}
+		label {
 			// text-align: center;
 			font-size: 18px;
 			color: $bColor;
-        }
-        
-        #name, #account, #password, #password2{
-            background: none;
+		}
+
+		#name,
+		#account,
+		#password,
+		#password2 {
+			background: none;
 			border: 1px solid $bColor;
 			border-radius: 5px;
 			font-size: 14px;
 			height: 40px;
-        }
-        button {
-            padding: 10px 25px;
-            margin-top: 50px;
-            background-color: $bColor;
-            border-radius: 30px;
-            color: #fff;
-            border: 0;
-            font-size: 14px;
-            width: 500px;
-            &:hover {
-                background-color: $sColor;
-            }
-        }
+		}
+		button {
+			padding: 10px 25px;
+			margin-top: 50px;
+			background-color: $bColor;
+			border-radius: 30px;
+			color: #fff;
+			border: 0;
+			font-size: 14px;
+			width: 500px;
+			&:hover {
+				background-color: $sColor;
+			}
+		}
+	}
+}
+
+#menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display: none;
+	cursor: pointer;
+	img {
+		height: 30px;
+	}
+	&:active #menu-list {
+		right: 0;
+	}
+	&:hover #menu-list {
+		right: 0;
+	}
+	#menu-list {
+		// padding: 20px;
+		height: 100vh;
+		width: 300px;
+		background-color: $light-yellow;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+		transition: 1s;
+		li {
+			list-style: none;
+			padding: 15px 15px;
+			a {
+				text-decoration: none;
+				color: rgb(39, 39, 39);
+			}
+		}
+		#menu-home {
+			background-color: $bColor;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+// 手機
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+	}
+	#menu {
+		display: block;
+	}
+	section {
+		margin: 0 10%;
+		#choice{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.choice {
+			width: 40%;
+		}
+		#signin-content,
+		#signup-content {
+			.form-box {
+				width: 80%;
+				margin: 30px auto;
+			}
+		}
+		#forget{
+			margin-left: 10%;
+		}
+		.btn{
+			margin: 0 auto;
+			width: 90%;
+			text-align: center;
+			button{
+				width: 90%;
+			}
+		}
+	}
+}
+
+// 平板
+@media screen and (min-width: 769px) {
+	nav {
+		display: none;
+	}
+	#menu {
+		display: block;
+	}
+	section {
+		margin: 0 10%;
+		#choice{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.choice {
+			width: 40%;
+		}
+		#signin-content,
+		#signup-content {
+			.form-box {
+				width: 80%;
+				margin: 30px auto;
+			}
+		}
+		#forget{
+			margin-left: 10%;
+		}
+		.btn{
+			margin: 0 auto;
+			width: 90%;
+			text-align: center;
+			button{
+				width: 90%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	nav {
+		display: block;
+	}
+	#menu {
+		display: none;
+	}
+	h1 {
+		display: none;
+	}
+	#banner {
+		img {
+			width: 100%;
+		}
+	}
+	#product-content {
+		#icon {
+			#icon-group {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr) !important;
+				margin: 0 10%;
+			}
+		}
+		#birthday,
+		#bread,
+		#wedding,
+		#baby,
+		#snack {
+			.card-group {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				.img-box {
+					width: 220px;
+					height: 220px;
+				}
+			}
+			.card {
+				margin-bottom: 50px !important;
+				.img-box {
+					&:hover {
+						.hover-color {
+							display: block !important;
+						}
+						.buy-btn {
+							display: inline-block !important;
+						}
+					}
+				}
+			}
+			.buy-btn-rwd {
+				display: none !important;
+			}
+		}
+	}
+	#check-box {
+		#sum {
+			margin: 50px 0;
+			text-align: right;
+		}
+	}
+	footer {
+		#footer-box {
+			padding: 50px 0;
+			#link {
+				li {
+					display: inline-block;
+					padding: 3px;
+				}
+			}
+		}
 	}
 }

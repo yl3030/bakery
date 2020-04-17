@@ -83,6 +83,7 @@ nav ul #nav-btn img:hover {
 }
 
 #contact-content h1 {
+  display: none;
   color: #fe6162;
   margin: 50px auto;
 }
@@ -102,7 +103,10 @@ nav ul #nav-btn img:hover {
           align-items: center;
 }
 
-#contact-content .form #subject, #contact-content .form #name, #contact-content .form #phone, #contact-content .form #mail {
+#contact-content .form #subject,
+#contact-content .form #name,
+#contact-content .form #phone,
+#contact-content .form #mail {
   padding: 8px;
   background: none;
   border: 1px solid #bbb6ac;
@@ -131,7 +135,8 @@ nav ul #nav-btn img:hover {
   text-align: center;
 }
 
-#contact-content #btn #reset, #contact-content #btn #submit {
+#contact-content #btn #reset,
+#contact-content #btn #submit {
   padding: 10px 25px;
   margin: 20px 20px;
   background-color: #fe6162;
@@ -141,7 +146,8 @@ nav ul #nav-btn img:hover {
   font-size: 14px;
 }
 
-#contact-content #btn #reset:hover, #contact-content #btn #submit:hover {
+#contact-content #btn #reset:hover,
+#contact-content #btn #submit:hover {
   background-color: #a8dcdf;
 }
 
@@ -193,6 +199,7 @@ footer #sub input {
   border: 0;
   padding: 5px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 footer #sub button {
@@ -201,6 +208,7 @@ footer #sub button {
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 footer #copy {
@@ -208,6 +216,182 @@ footer #copy {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  margin: 50px 0;
+  padding: 50px 0;
+}
+
+#menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#menu img {
+  height: 30px;
+}
+
+#menu:active #menu-list {
+  right: 0;
+}
+
+#menu:hover #menu-list {
+  right: 0;
+}
+
+#menu #menu-list {
+  height: 100vh;
+  width: 300px;
+  background-color: #faf1d6;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu #menu-list li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+#menu #menu-list li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#menu #menu-list #menu-home {
+  background-color: #fe6162;
+}
+
+#menu #menu-list #menu-home a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .carousel {
+    margin: 0 auto;
+  }
+  h1 {
+    display: block;
+    text-align: center;
+  }
+  #contact-content {
+    margin: 0 auto;
+  }
+  #contact-content img {
+    width: 100%;
+  }
+  #contact-content .form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 10px 10%;
+  }
+  #contact-content .form label,
+  #contact-content .form input {
+    margin: 5px 0;
+  }
+  #contact-content #form-text {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 10px 10%;
+  }
+  footer #footer-box {
+    display: block;
+    padding: 0 20px;
+  }
+  footer #footer-box #link {
+    padding: 50px 0;
+  }
+  footer #footer-box #link li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .carousel {
+    margin: 0 auto;
+  }
+  h1 {
+    display: block;
+    text-align: center;
+  }
+  #contact-content {
+    margin: 0 auto;
+  }
+  #contact-content img {
+    width: 100%;
+  }
+  #contact-content .form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 10px 10%;
+  }
+  #contact-content .form label,
+  #contact-content .form input {
+    margin: 5px 0;
+  }
+  #contact-content #form-text {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 10px 10%;
+  }
+  footer #footer-box {
+    padding: 50px 180px;
+  }
+  footer #footer-box #link li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  #contact-content {
+    margin: 50px auto;
+  }
+  #contact-content img {
+    width: 100%;
+  }
+  #contact-content .form {
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
+    margin: 15px 0;
+  }
+  #contact-content #form-text {
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
+    margin: 15px 0;
+  }
+  footer #footer-box {
+    padding: 50px 0;
+  }
+  footer #footer-box #link li {
+    display: inline-block;
+    padding: 3px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

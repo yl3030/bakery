@@ -178,6 +178,7 @@ footer #sub input {
   border: 0;
   padding: 5px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 footer #sub button {
@@ -186,6 +187,7 @@ footer #sub button {
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 footer #copy {

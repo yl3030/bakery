@@ -79,12 +79,18 @@ nav ul #nav-btn #car {
 }
 
 #banner {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 50px auto;
 }
 
 #banner img {
-  height: 400px;
+  width: 100%;
+}
+
+h1 {
+  display: none;
+  color: #fe6162;
+  margin: 50px auto;
 }
 
 #product-content {
@@ -98,7 +104,7 @@ nav ul #nav-btn #car {
 }
 
 #product-content h2::before {
-  content: '';
+  content: "";
   width: 50px;
   height: 3px;
   background-color: #ffb938;
@@ -369,6 +375,28 @@ nav ul #nav-btn #car {
   display: inline-block;
 }
 
+#product-content #birthday .card-body p,
+#product-content #bread .card-body p,
+#product-content #wedding .card-body p,
+#product-content #baby .card-body p,
+#product-content #snack .card-body p {
+  margin-bottom: 0;
+}
+
+#product-content #birthday .buy-btn-rwd,
+#product-content #bread .buy-btn-rwd,
+#product-content #wedding .buy-btn-rwd,
+#product-content #baby .buy-btn-rwd,
+#product-content #snack .buy-btn-rwd {
+  background-color: #ffb938;
+  color: #fff;
+  border: 0;
+  padding: 8px 30px;
+  display: none;
+  border-radius: 5px;
+  margin: 0 40px;
+}
+
 #check-box {
   background-color: #faf1d6;
   padding: 20px 0;
@@ -376,7 +404,7 @@ nav ul #nav-btn #car {
 }
 
 #check-box #check {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto 100px;
 }
 
@@ -547,6 +575,7 @@ footer #sub input {
   border: 0;
   padding: 5px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 footer #sub button {
@@ -555,6 +584,7 @@ footer #sub button {
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 footer #copy {
@@ -562,6 +592,310 @@ footer #copy {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  margin: 50px 0;
+  padding: 50px 0;
+}
+
+#menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#menu img {
+  height: 30px;
+}
+
+#menu:active #menu-list {
+  right: 0;
+}
+
+#menu:hover #menu-list {
+  right: 0;
+}
+
+#menu #menu-list {
+  height: 100vh;
+  width: 300px;
+  background-color: #faf1d6;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu #menu-list li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+#menu #menu-list li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#menu #menu-list #menu-home {
+  background-color: #fe6162;
+}
+
+#menu #menu-list #menu-home a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .carousel {
+    margin: 0 auto;
+  }
+  h1 {
+    display: block;
+    text-align: center;
+  }
+  #banner img {
+    width: 100%;
+  }
+  #product-content #icon #icon-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    margin: 0 10%;
+  }
+  #product-content #birthday .card-group,
+  #product-content #bread .card-group,
+  #product-content #wedding .card-group,
+  #product-content #baby .card-group,
+  #product-content #snack .card-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #product-content #birthday .card-group .img-box,
+  #product-content #bread .card-group .img-box,
+  #product-content #wedding .card-group .img-box,
+  #product-content #baby .card-group .img-box,
+  #product-content #snack .card-group .img-box {
+    width: 150px;
+    height: 150px;
+  }
+  #product-content #birthday .card,
+  #product-content #bread .card,
+  #product-content #wedding .card,
+  #product-content #baby .card,
+  #product-content #snack .card {
+    margin-bottom: 50px !important;
+  }
+  #product-content #birthday .card .hover-color,
+  #product-content #bread .card .hover-color,
+  #product-content #wedding .card .hover-color,
+  #product-content #baby .card .hover-color,
+  #product-content #snack .card .hover-color {
+    display: none !important;
+  }
+  #product-content #birthday .card .buy-btn,
+  #product-content #bread .card .buy-btn,
+  #product-content #wedding .card .buy-btn,
+  #product-content #baby .card .buy-btn,
+  #product-content #snack .card .buy-btn {
+    display: none !important;
+  }
+  #product-content #birthday .buy-btn-rwd,
+  #product-content #bread .buy-btn-rwd,
+  #product-content #wedding .buy-btn-rwd,
+  #product-content #baby .buy-btn-rwd,
+  #product-content #snack .buy-btn-rwd {
+    display: block !important;
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+  #check-box #sum {
+    margin: 50px 0;
+    text-align: center;
+  }
+  footer #footer-box {
+    display: block;
+    padding: 0 20px;
+  }
+  footer #footer-box #link {
+    padding: 50px 0;
+  }
+  footer #footer-box #link li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .carousel {
+    margin: 0 auto;
+  }
+  h1 {
+    display: block;
+    text-align: center;
+  }
+  #banner img {
+    width: 100%;
+  }
+  #product-content #icon #icon-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5] !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+    margin: 0 10%;
+  }
+  #product-content #birthday .card-group,
+  #product-content #bread .card-group,
+  #product-content #wedding .card-group,
+  #product-content #baby .card-group,
+  #product-content #snack .card-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #product-content #birthday .card-group .img-box,
+  #product-content #bread .card-group .img-box,
+  #product-content #wedding .card-group .img-box,
+  #product-content #baby .card-group .img-box,
+  #product-content #snack .card-group .img-box {
+    width: 200px;
+    height: 200px;
+  }
+  #product-content #birthday .card,
+  #product-content #bread .card,
+  #product-content #wedding .card,
+  #product-content #baby .card,
+  #product-content #snack .card {
+    margin-bottom: 50px !important;
+  }
+  #product-content #birthday .card .hover-color,
+  #product-content #bread .card .hover-color,
+  #product-content #wedding .card .hover-color,
+  #product-content #baby .card .hover-color,
+  #product-content #snack .card .hover-color {
+    display: none !important;
+  }
+  #product-content #birthday .card .buy-btn,
+  #product-content #bread .card .buy-btn,
+  #product-content #wedding .card .buy-btn,
+  #product-content #baby .card .buy-btn,
+  #product-content #snack .card .buy-btn {
+    display: none !important;
+  }
+  #product-content #birthday .buy-btn-rwd,
+  #product-content #bread .buy-btn-rwd,
+  #product-content #wedding .buy-btn-rwd,
+  #product-content #baby .buy-btn-rwd,
+  #product-content #snack .buy-btn-rwd {
+    display: block !important;
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+  #check-box #sum {
+    margin: 50px 0;
+    text-align: center;
+  }
+  footer #footer-box {
+    padding: 50px 180px;
+  }
+  footer #footer-box #link li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  #banner img {
+    width: 100%;
+  }
+  #product-content #icon #icon-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5] !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+    margin: 0 10%;
+  }
+  #product-content #birthday .card-group,
+  #product-content #bread .card-group,
+  #product-content #wedding .card-group,
+  #product-content #baby .card-group,
+  #product-content #snack .card-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #product-content #birthday .card-group .img-box,
+  #product-content #bread .card-group .img-box,
+  #product-content #wedding .card-group .img-box,
+  #product-content #baby .card-group .img-box,
+  #product-content #snack .card-group .img-box {
+    width: 220px;
+    height: 220px;
+  }
+  #product-content #birthday .card,
+  #product-content #bread .card,
+  #product-content #wedding .card,
+  #product-content #baby .card,
+  #product-content #snack .card {
+    margin-bottom: 50px !important;
+  }
+  #product-content #birthday .card .img-box:hover .hover-color,
+  #product-content #bread .card .img-box:hover .hover-color,
+  #product-content #wedding .card .img-box:hover .hover-color,
+  #product-content #baby .card .img-box:hover .hover-color,
+  #product-content #snack .card .img-box:hover .hover-color {
+    display: block !important;
+  }
+  #product-content #birthday .card .img-box:hover .buy-btn,
+  #product-content #bread .card .img-box:hover .buy-btn,
+  #product-content #wedding .card .img-box:hover .buy-btn,
+  #product-content #baby .card .img-box:hover .buy-btn,
+  #product-content #snack .card .img-box:hover .buy-btn {
+    display: inline-block !important;
+  }
+  #product-content #birthday .buy-btn-rwd,
+  #product-content #bread .buy-btn-rwd,
+  #product-content #wedding .buy-btn-rwd,
+  #product-content #baby .buy-btn-rwd,
+  #product-content #snack .buy-btn-rwd {
+    display: none !important;
+  }
+  #check-box #sum {
+    margin: 50px 0;
+    text-align: right;
+  }
+  footer #footer-box {
+    padding: 50px 0;
+  }
+  footer #footer-box #link li {
+    display: inline-block;
+    padding: 3px;
+  }
 }
 /*# sourceMappingURL=product.css.map */

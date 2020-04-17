@@ -76,113 +76,294 @@ nav {
 	}
 }
 
-#contact-content{
-    max-width:1000px;
-    margin: 50px auto;
-    h1{
-        color: $bColor;
-        margin: 50px auto;
-    }
+#contact-content {
+	max-width: 1000px;
+	margin: 50px auto;
+	h1 {
+		display: none;
+		color: $bColor;
+		margin: 50px auto;
+	}
 
-    label{
-        color: rgb(39,39,39);
-    }
+	label {
+		color: rgb(39, 39, 39);
+	}
 
-    .form{
-        display: grid;
-        grid-template-columns: 10% 90%;
-        margin: 15px 0;
-        align-items: center;
-        #subject, #name, #phone, #mail{
-            padding: 8px;
-            background: none;
-            border: 1px solid #bbb6ac;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-    }
+	.form {
+		display: grid;
+		grid-template-columns: 10% 90%;
+		margin: 15px 0;
+		align-items: center;
+		#subject,
+		#name,
+		#phone,
+		#mail {
+			padding: 8px;
+			background: none;
+			border: 1px solid #bbb6ac;
+			border-radius: 5px;
+			font-size: 14px;
+		}
+	}
 
-    #form-text{
-        display: grid;
-        grid-template-columns: 10% 90%;
-        margin: 15px 0;
-        #text{
-            vertical-align: top;
-            padding: 8px;
-            background: none;
-            border: 1px solid #b6a88d;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-    }
-   
-    #btn{
-        text-align: center;
-        #reset, #submit{
-            padding: 10px 25px;
-            margin: 20px 20px;
-            background-color: $bColor;
-            border-radius: 30px;
-            color: #fff;
-            border: 0;
-            font-size: 14px;
-            &:hover{
-                background-color: $sColor;
-            }
-        }
-    }
+	#form-text {
+		display: grid;
+		grid-template-columns: 10% 90%;
+		margin: 15px 0;
+		#text {
+			vertical-align: top;
+			padding: 8px;
+			background: none;
+			border: 1px solid #b6a88d;
+			border-radius: 5px;
+			font-size: 14px;
+		}
+	}
+
+	#btn {
+		text-align: center;
+		#reset,
+		#submit {
+			padding: 10px 25px;
+			margin: 20px 20px;
+			background-color: $bColor;
+			border-radius: 30px;
+			color: #fff;
+			border: 0;
+			font-size: 14px;
+			&:hover {
+				background-color: $sColor;
+			}
+		}
+	}
 }
 
-footer{
+footer {
 	background-color: $yellow;
 	color: #fff;
-		#footer-box{
-			max-width: 1000px;
-			margin: 0 auto;
-			padding: 50px 0;
-			display: grid;
-			grid-template-columns: repeat(2,1fr);
-		}
-		li{
-			display: inline;
-			font-size: 16px;
-			margin: 0 5px;
-			a{
+	#footer-box {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 50px 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	li {
+		display: inline;
+		font-size: 16px;
+		margin: 0 5px;
+		a {
+			text-decoration: none;
+			color: #fff;
+			&:hover {
+				color: $light-yellow;
 				text-decoration: none;
+			}
+		}
+	}
+	h3 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	#sub {
+		display: grid;
+		grid-template-columns: 70% 20%;
+		grid-gap: 10px;
+		input {
+			border: 0;
+			padding: 5px;
+			border-radius: 5px;
+			font-size: 14px;
+		}
+		button {
+			color: $yellow;
+			border: 0;
+			background-color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+	}
+	#copy {
+		text-align: center;
+		grid-column: 1/3;
+		padding: 50px 0;
+	}
+}
+
+#menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display: none;
+	cursor: pointer;
+	img {
+		height: 30px;
+	}
+	&:active #menu-list {
+		right: 0;
+	}
+	&:hover #menu-list {
+		right: 0;
+	}
+	#menu-list {
+		// padding: 20px;
+		height: 100vh;
+		width: 300px;
+		background-color: $light-yellow;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+		transition: 1s;
+		li {
+			list-style: none;
+			padding: 15px 15px;
+			a {
+				text-decoration: none;
+				color: rgb(39, 39, 39);
+			}
+		}
+		#menu-home {
+			background-color: $bColor;
+			a {
 				color: #fff;
-				&:hover{
-					color: $light-yellow;
-					text-decoration: none;
+			}
+		}
+	}
+}
+
+// 手機
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+	}
+	#menu {
+		display: block;
+	}
+	.carousel {
+		margin: 0 auto;
+	}
+	h1 {
+		display: block;
+		text-align: center;
+	}
+	#contact-content {
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+		.form {
+			grid-template-columns: 1fr;
+
+			margin: 10px 10%;
+			label,
+			input {
+				margin: 5px 0;
+			}
+		}
+		#form-text {
+			grid-template-columns: 1fr;
+			margin: 10px 10%;
+		}
+	}
+
+	footer {
+		#footer-box {
+			display: block;
+			padding: 0 20px;
+			#link {
+				padding: 50px 0;
+				li {
+					display: block;
+					margin: 10px 0;
 				}
 			}
 		}
-		h3{
-			font-size: 24px;
-			margin-bottom: 15px;
+	}
+}
+
+// 平板
+@media screen and (min-width: 769px) {
+	nav {
+		display: none;
+	}
+	#menu {
+		display: block;
+	}
+	.carousel {
+		margin: 0 auto;
+	}
+	h1 {
+		display: block;
+		text-align: center;
+	}
+	#contact-content {
+		margin: 0 auto;
+		img {
+			width: 100%;
 		}
-		#sub{
-			display: grid;
-			grid-template-columns: 70% 20%;
-			grid-gap: 10px;
-			input{
-				border: 0;
-				padding: 5px;
-				border-radius: 5px;
+		.form {
+			grid-template-columns: 1fr;
+
+			margin: 10px 10%;
+			label,
+			input {
+				margin: 5px 0;
 			}
-			button{
-				color: $yellow;
-				border: 0;
-				background-color: #fff;
-				border-radius: 5px;
-				cursor: pointer;
-			}
 		}
-		#copy{
-			text-align: center;
-			grid-column: 1/3;
-			margin: 50px 0;
+		#form-text {
+			grid-template-columns: 1fr;
+			margin: 10px 10%;
 		}
-		
 	}
 
+	footer {
+		#footer-box {
+			padding: 50px 180px;
+			#link {
+				li {
+					display: block;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
 
+@media screen and (min-width: 1025px) {
+	nav {
+		display: block;
+	}
+	#menu {
+		display: none;
+	}
+	h1 {
+		display: none;
+	}
+	#contact-content {
+		margin: 50px auto;
+		img {
+			width: 100%;
+		}
+		.form {
+			grid-template-columns: 10% 90%;
+			margin: 15px 0;
+		}
+		#form-text {
+			grid-template-columns: 10% 90%;
+			margin: 15px 0;
+		}
+	}
+	footer {
+		#footer-box {
+			padding: 50px 0;
+			#link {
+				li {
+					display: inline-block;
+					padding: 3px;
+				}
+			}
+		}
+	}
+}

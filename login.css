@@ -117,7 +117,6 @@ section #signin-content .form-box {
 }
 
 section #signin-content label {
-  text-align: center;
   font-size: 18px;
   color: #fe6162;
 }
@@ -178,7 +177,10 @@ section #signup-content label {
   color: #fe6162;
 }
 
-section #signup-content #name, section #signup-content #account, section #signup-content #password, section #signup-content #password2 {
+section #signup-content #name,
+section #signup-content #account,
+section #signup-content #password,
+section #signup-content #password2 {
   background: none;
   border: 1px solid #fe6162;
   border-radius: 5px;
@@ -199,5 +201,205 @@ section #signup-content button {
 
 section #signup-content button:hover {
   background-color: #a8dcdf;
+}
+
+#menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#menu img {
+  height: 30px;
+}
+
+#menu:active #menu-list {
+  right: 0;
+}
+
+#menu:hover #menu-list {
+  right: 0;
+}
+
+#menu #menu-list {
+  height: 100vh;
+  width: 300px;
+  background-color: #faf1d6;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#menu #menu-list li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+#menu #menu-list li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#menu #menu-list #menu-home {
+  background-color: #fe6162;
+}
+
+#menu #menu-list #menu-home a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  section {
+    margin: 0 10%;
+  }
+  section #choice {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section .choice {
+    width: 40%;
+  }
+  section #signin-content .form-box,
+  section #signup-content .form-box {
+    width: 80%;
+    margin: 30px auto;
+  }
+  section #forget {
+    margin-left: 10%;
+  }
+  section .btn {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  section .btn button {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  section {
+    margin: 0 10%;
+  }
+  section #choice {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section .choice {
+    width: 40%;
+  }
+  section #signin-content .form-box,
+  section #signup-content .form-box {
+    width: 80%;
+    margin: 30px auto;
+  }
+  section #forget {
+    margin-left: 10%;
+  }
+  section .btn {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  section .btn button {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  #banner img {
+    width: 100%;
+  }
+  #product-content #icon #icon-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5] !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+    margin: 0 10%;
+  }
+  #product-content #birthday .card-group,
+  #product-content #bread .card-group,
+  #product-content #wedding .card-group,
+  #product-content #baby .card-group,
+  #product-content #snack .card-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #product-content #birthday .card-group .img-box,
+  #product-content #bread .card-group .img-box,
+  #product-content #wedding .card-group .img-box,
+  #product-content #baby .card-group .img-box,
+  #product-content #snack .card-group .img-box {
+    width: 220px;
+    height: 220px;
+  }
+  #product-content #birthday .card,
+  #product-content #bread .card,
+  #product-content #wedding .card,
+  #product-content #baby .card,
+  #product-content #snack .card {
+    margin-bottom: 50px !important;
+  }
+  #product-content #birthday .card .img-box:hover .hover-color,
+  #product-content #bread .card .img-box:hover .hover-color,
+  #product-content #wedding .card .img-box:hover .hover-color,
+  #product-content #baby .card .img-box:hover .hover-color,
+  #product-content #snack .card .img-box:hover .hover-color {
+    display: block !important;
+  }
+  #product-content #birthday .card .img-box:hover .buy-btn,
+  #product-content #bread .card .img-box:hover .buy-btn,
+  #product-content #wedding .card .img-box:hover .buy-btn,
+  #product-content #baby .card .img-box:hover .buy-btn,
+  #product-content #snack .card .img-box:hover .buy-btn {
+    display: inline-block !important;
+  }
+  #product-content #birthday .buy-btn-rwd,
+  #product-content #bread .buy-btn-rwd,
+  #product-content #wedding .buy-btn-rwd,
+  #product-content #baby .buy-btn-rwd,
+  #product-content #snack .buy-btn-rwd {
+    display: none !important;
+  }
+  #check-box #sum {
+    margin: 50px 0;
+    text-align: right;
+  }
+  footer #footer-box {
+    padding: 50px 0;
+  }
+  footer #footer-box #link li {
+    display: inline-block;
+    padding: 3px;
+  }
 }
 /*# sourceMappingURL=login.css.map */

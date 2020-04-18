@@ -24,8 +24,8 @@ $hMargin-top: 25px;
 	#rwd-logo {
 		border-right: 2px solid $sColor;
 		display: inline-block;
-		margin: 10px 10px 10px 30px ;
-		padding: 0 15px;
+		margin: 10px 10px 10px 10px ;
+		padding: 0 10px;
 		li{
 			color: $bColor;
 			list-style: none;
@@ -43,11 +43,11 @@ $hMargin-top: 25px;
 	}
 	#menu {
 		position: fixed;
-		top: 20px;
+		top: 15px;
 		right: 20px;
 		cursor: pointer;
 		img {
-			height: 30px;
+			height: 30px;	
 		}
 		&:active #menu-list {
 			right: 0;
@@ -55,28 +55,30 @@ $hMargin-top: 25px;
 		&:hover #menu-list {
 			right: 0;
 		}
+		
 		#menu-list {
 			height: 100vh;
-			width: 300px;
+			width: 50%;
 			background-color: $light-yellow;
 			position: fixed;
 			top: 0;
-			right: -305px;
+			right: -55%;
 			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
 			transition: 1s;
-			li {
-				list-style: none;
-				padding: 15px 15px;
-				a {
-					text-decoration: none;
-					color: rgb(39, 39, 39);
+			a {
+				display: block;
+				text-decoration: none;
+				color: $fColor;
+				color: rgb(39, 39, 39);
+				li {
+					list-style: none;
+					padding: 15px 15px;
 				}
 			}
+			
 			#menu-product {
 				background-color: $bColor;
-				a {
-					color: #fff;
-				}
+				color: #fff;
 			}
 		}
 	}
@@ -159,6 +161,7 @@ nav {
 	h2 {
 		font-size: 30px;
 		color: $bColor;
+		font-weight: 900;
 		// background-color: #ffb938;
 	}
 	h2::before {
@@ -307,7 +310,6 @@ nav {
 			padding: 8px 30px;
 			display: none;
 			border-radius: 5px;
-			margin: 0 40px;
 		}
 	}
 }
@@ -425,6 +427,7 @@ footer {
 			padding: 0 20%;
 		}
 		.link {
+			padding: 5px 0;
 			a {
 				display: inline-block;
 				width: 100px;
@@ -483,11 +486,15 @@ footer {
 	}
 	#rwd-nav {
 		display: block;
+		#menu-list{
+			width: 50%;
+		}
 	}
 	.carousel {
 		margin: 0 auto;
 	}
 	#banner {
+		margin: 0 auto;
 		img {
 			width: 100%;
 		}
@@ -525,7 +532,7 @@ footer {
 			.buy-btn-rwd {
 				display: block !important;
 				font-size: 12px;
-				padding: 8px 15px;
+				padding: 8px 10px;
 			}
 		}
 	}
@@ -550,7 +557,6 @@ footer {
 					}
 					.link {
 						margin: 0 auto;
-						padding: 5px;
 					}
 				}
 		}
@@ -575,11 +581,15 @@ footer {
 	}
 	#rwd-nav {
 		display: block;
+		#menu-list{
+			width: 300px;
+		}
 	}
 	.carousel {
 		margin: 0 auto;
 	}
 	#banner {
+		margin: 0 auto;
 		img {
 			width: 100%;
 		}
@@ -642,7 +652,6 @@ footer {
 					}
 					.link {
 						margin: 0 auto;
-						padding: 5px;
 					}
 				}
 		}
@@ -657,6 +666,7 @@ footer {
 		display: none;
 	}
 	#banner {
+		margin: 50px auto;
 		img {
 			width: 100%;
 		}

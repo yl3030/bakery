@@ -23,8 +23,8 @@ $hMargin-top: 25px;
 	#rwd-logo {
 		border-right: 2px solid $sColor;
 		display: inline-block;
-		margin: 10px 10px 10px 30px ;
-		padding: 0 15px;
+		margin: 10px 10px 10px 10px ;
+		padding: 0 10px;
 		li{
 			color: $bColor;
 			list-style: none;
@@ -42,7 +42,7 @@ $hMargin-top: 25px;
 	}
 	#menu {
 		position: fixed;
-		top: 20px;
+		top: 15px;
 		right: 20px;
 		cursor: pointer;
 		img {
@@ -56,26 +56,27 @@ $hMargin-top: 25px;
 		}
 		#menu-list {
 			height: 100vh;
-			width: 300px;
+			width: 50%;
 			background-color: $light-yellow;
 			position: fixed;
 			top: 0;
-			right: -305px;
+			right: -55%;
 			box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
 			transition: 1s;
-			li {
-				list-style: none;
-				padding: 15px 15px;
-				a {
-					text-decoration: none;
-					color: rgb(39, 39, 39);
+			a {
+				display: block;
+				text-decoration: none;
+				color: $fColor;
+				color: rgb(39, 39, 39);
+				li {
+					list-style: none;
+					padding: 15px 15px;
 				}
 			}
+			
 			#menu-login {
 				background-color: $bColor;
-				a {
-					color: #fff;
-				}
+				color: #fff;
 			}
 		}
 	}
@@ -266,6 +267,9 @@ section {
 	}
 	#rwd-nav {
 		display: block;
+		#menu-list{
+			width: 50%;
+		}
 	}
 	section {
 		margin: 0;
@@ -314,6 +318,9 @@ section {
 	}
 	#rwd-nav {
 		display: block;
+		#menu-list{
+			width: 300px;
+		}
 	}
 	section {
 		margin: 0;

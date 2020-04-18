@@ -22,8 +22,8 @@
 #rwd-nav #rwd-logo {
   border-right: 2px solid #a8dcdf;
   display: inline-block;
-  margin: 10px 10px 10px 30px;
-  padding: 0 15px;
+  margin: 10px 10px 10px 10px;
+  padding: 0 10px;
 }
 
 #rwd-nav #rwd-logo li {
@@ -44,7 +44,7 @@
 
 #rwd-nav #menu {
   position: fixed;
-  top: 20px;
+  top: 15px;
   right: 20px;
   cursor: pointer;
 }
@@ -63,32 +63,31 @@
 
 #rwd-nav #menu #menu-list {
   height: 100vh;
-  width: 300px;
+  width: 50%;
   background-color: #faf1d6;
   position: fixed;
   top: 0;
-  right: -305px;
+  right: -55%;
   -webkit-box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
           box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#rwd-nav #menu #menu-list li {
+#rwd-nav #menu #menu-list a {
+  display: block;
+  text-decoration: none;
+  color: #565656;
+  color: #272727;
+}
+
+#rwd-nav #menu #menu-list a li {
   list-style: none;
   padding: 15px 15px;
 }
 
-#rwd-nav #menu #menu-list li a {
-  text-decoration: none;
-  color: #272727;
-}
-
 #rwd-nav #menu #menu-list #menu-home {
   background-color: #fe6162;
-}
-
-#rwd-nav #menu #menu-list #menu-home a {
   color: #fff;
 }
 
@@ -299,7 +298,7 @@ footer #copy {
     display: block;
   }
   #rwd-nav #menu-list {
-    width: 200px;
+    width: 50%;
   }
   section #title {
     margin-left: 50px;
@@ -329,6 +328,9 @@ footer #copy {
   }
   #rwd-nav {
     display: block;
+  }
+  #rwd-nav #menu-list {
+    width: 300px;
   }
   section #title {
     margin-left: 50px;

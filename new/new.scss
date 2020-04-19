@@ -128,6 +128,7 @@ nav {
 			position: fixed;
 			right: 70px;
 			top: 35px;
+			z-index: 1;
 			img {
 				height: 45px;
 				background-color: $bColor;
@@ -141,9 +142,9 @@ nav {
 	}
 }
 
-#new-banner {
+.carousel {
 	max-width: 1000px;
-	margin: 50px auto;
+	margin: 0 auto 50px;
 }
 
 
@@ -164,6 +165,7 @@ nav {
 			}
 			p {
 				padding: 3px 0;
+				margin: 0;
 			}
 		}
 		.date {

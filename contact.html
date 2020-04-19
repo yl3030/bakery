@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yulita Bakery</title>
 
+    <!-- Bootatrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- AOS CSS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my CSS -->
@@ -23,15 +27,33 @@
         <div id="menu">
             <img src="./img/menu.png" alt="">
             <div id="menu-list">
-                <a href="index.html"><li id="menu-home">首頁</li></a>
-                <a href="story.html"><li id="menu-story">品牌故事</li></a>
-                <a href="new.html"><li id="menu-new">最新消息</li></a>
-                <a href="store.html"><li id="menu-store">門市據點</li></a>
-                <a href="contact.html"><li id="menu-contact">聯絡我們</li></a>
-                <a href="product.html"><li id="menu-product">商品專區</li></a>
-                <a href="login.html"><li id="menu-login">會員登入</li></a>
-                <a href="#"><li id="menu-fb">Facebook</li></a>
-                <a href="#"><li id="menu-ig">Instagram</li></a>
+                <a href="index.html">
+                    <li id="menu-home">首頁</li>
+                </a>
+                <a href="story.html">
+                    <li id="menu-story">品牌故事</li>
+                </a>
+                <a href="new.html">
+                    <li id="menu-new">最新消息</li>
+                </a>
+                <a href="store.html">
+                    <li id="menu-store">門市據點</li>
+                </a>
+                <a href="contact.html">
+                    <li id="menu-contact">聯絡我們</li>
+                </a>
+                <a href="product.html">
+                    <li id="menu-product">商品專區</li>
+                </a>
+                <a href="login.html">
+                    <li id="menu-login">會員登入</li>
+                </a>
+                <a href="#">
+                    <li id="menu-fb">Facebook</li>
+                </a>
+                <a href="#">
+                    <li id="menu-ig">Instagram</li>
+                </a>
             </div>
         </div>
     </nav>
@@ -59,35 +81,65 @@
         </nav>
     </div>
 
-    <div id="contact-content">
-        <img src="./img/contact-banner.jpg" alt="">
-        <div class="form">
-            <label for="subject">主旨</label>
-            <input type="text" id="subject" name="subject" placeholder="請輸入主旨">
+    <!-- 輪播圖 -->
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-        <div class="form">
-            <label for="name">姓名</label>
-            <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
-        </div>
-        <div class="form">
-            <label for="phone">電話</label>
-            <input type="text" id="phone" name="phone" placeholder="請輸入電話" required>
-        </div>
-        <div class="form">
-            <label for="mail">信箱</label>
-            <input type="email" id="mail" name="mail" placeholder="請輸入信箱" required>
-        </div>
+    <div id="contact-content" data-aos="fade-up" data-aos-delay="300"
+    data-aos-duration="1000" data-aos-once="true" data-aos-offset="200">
+        <form action="mailto:yl301114@gmail.com" method="post">
+            <div class="form">
+                <label for="subject">主旨</label>
+                <input type="text" id="subject" name="subject" placeholder="請輸入主旨">
+            </div>
 
-        <div id="form-text">
-            <label for="text">內容</label>
-            <textarea name="text" id="text" cols="40" rows="10"></textarea>
-        </div>
+            <div class="form">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+            </div>
+            <div class="form">
+                <label for="phone">電話</label>
+                <input type="text" id="phone" name="phone" placeholder="請輸入電話" required>
+            </div>
+            <div class="form">
+                <label for="mail">信箱</label>
+                <input type="email" id="mail" name="mail" placeholder="請輸入信箱" required>
+            </div>
 
-        <div id="btn">
-            <input type="reset" id="reset" value="重新輸入">
-            <input type="submit" id="submit" value="確認送出">
-        </div>
+            <div id="form-text">
+                <label for="text">內容</label>
+                <textarea name="text" id="text" cols="40" rows="10"></textarea>
+            </div>
+
+            <div id="btn">
+                <input type="reset" id="reset" value="重新輸入">
+                <input type="submit" id="submit" value="確認送出">
+            </div>
+        </form>
     </div>
 
     <footer>
@@ -115,7 +167,16 @@
         </div>
     </footer>
 
-
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <!-- AOS JS CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

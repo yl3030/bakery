@@ -148,6 +148,7 @@ nav ul #nav-btn {
   position: fixed;
   right: 70px;
   top: 35px;
+  z-index: 1;
 }
 
 nav ul #nav-btn img {
@@ -159,6 +160,11 @@ nav ul #nav-btn img {
 
 nav ul #nav-btn img:hover {
   background-color: #565656;
+}
+
+.carousel {
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 #contact-content {
